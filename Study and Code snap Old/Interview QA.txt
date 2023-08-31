@@ -1,0 +1,358 @@
+
+Interview QA ==>
+===================================================================================
+
+public class Program
+{
+public static void Main()
+{
+Console.WriteLine("Hello World");
+}
+}
+
+
+using System;
+
+public interface IOrder
+{
+void AddToCart();
+void OrderPayment();
+}
+
+ICart  : AddToCart
+IPayment : OrderPayment
+
+public class OnlineOrder: IOrder
+{
+public void AddToCart()
+{
+
+}
+
+public void OrderPayment()
+{
+
+}
+}
+
+
+
+public class OfflineOrder: IOrder
+{
+public void AddToCart()
+{
+
+}
+
+public void OrderPayment()
+{
+// This method is not required.
+throw new Exception();
+}
+}
+
+===================================================================================
+icomparer vs icomparable
+
+public async void GetSrvrTime(string ipAddr, float bal)
+{
+var serverTime = await GetTimeFromSvr(ipAddr);
+var balInt = bal * 1.06;  //
+Console.WriteLine(balInt);
+Console.WriteLine(svrTime);
+}
+
+public Task<datetime> GetTimeFromSvr(string ipAddr)
+{
+// Long running operation, service call may be
+	return GetTimeFromActualServer(ipAddr);
+}
+
+public  void GetSrvrTime(string ipAddr, float bal)
+{
+var svrTime = await GetTimeFromSvr(ipAddr);
+var balInt = bal * 1.06;  //
+Console.WriteLine(balInt);
+Console.WriteLine(svrTime);
+}
+
+public datetime GetTimeFromSvr(string ipAddr)
+{
+// Long running operation, service call may be
+	return GetTimeFromActualServer(ipAddr);
+}
+
+
+
+[Microsoft][SQL Server Native Client 11.0][SQL Server]Incorrect syntax near '⁍'.
+
+
+=================  icerties ==========
+Pre-Interview Preparation for Software Architect
+You are in Section 1: Async Programming, question 1 of 1. There are a total of 5 sections.
+
+Mispriced Silver
+
+In this problem, you have to write a C# program to fetch data via two REST APIs and do some additional processing on the data. Your program is expected to make two different REST calls to fetch two different datasets in json format, and then do some processing on these two datasets, and output the results as described below.
+
+Your program has to read a 3-digit department id from the standard input, fetch some customer billing data from the Billing API, and the current plan that the customer is on via the Customer API, and print to standard output names of customer IDs who are on the silver plan but their billing amount is not between 450 and 650. Please read the details of the APIs and processing below.
+
+The Billing API is at this endpoint:
+
+https://assessments.reliscore.com/api/billing/<deptid>/
+Here <deptid> is to be replaced by a 3-digit string, like 153. Calling this returns billing data in this format:
+
+
+In case of success, this returns JSON in this format:
+
+{"status": "success", 
+ "data": {"custid1": 723,
+              "custid2": 670,
+              "custid3": 430}}
+This represents the billing amounts for the specified customer ids.
+
+The Customer API is at this endpoint:
+
+https://assessments.reliscore.com/api/customers/
+Calling this returns customer data in this format:
+
+
+In case of success, this returns JSON in this format:
+
+{"status": "success", 
+ "data": {"custid1": "gold",
+              "custid2": "bronze",
+              "custid3": "bronze"}}
+This data represents the current plan that the customer is on.
+
+
+In case of error, both APIs return something like:
+
+{"status": "error",
+ "message": "Incorrect URL"}
+Your program should read the department id from standard input and fetch the billing and customer data asynchronously. For each customer id in the billing data, if the customer id does not exist in the customer data, you should output a line to standard output saying Warning: Plan info missing for <customer-id>.
+
+Finally, you should print the customer ids on the silver plan whose billing is less than 450 or more than 650.
+
+
+Please write the program described above, keeping in mind the following things:
+
+The two different REST calls you make both can have a high latency, so can take a while to fetch. Keep that in mind when writing your code. Your program should be written in such a way that neither of these calls should delay the other, nor should they freeze the main thread.
+Your code must include both, the code to appropriately fetch the data, and the code to do the necessary computation
+Make sure that missing entries result in output to the console/stdout as indicated in the question
+In case of any other errors from the APIs you're consuming, your code msut result in an error/exception indicating "API Error"
+
+
+========================================================================================
+
+
+============================= Zensar  ====================
+https://app.codility.com/c/run/V59CPR-5S7/
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebApi.Tests
+{
+    public class ApiController : Controller
+    {
+        public const string CountryCodeHeaderName = "x-test-country-code";
+
+        private readonly IRepository _repository;
+
+        public ApiController(
+            IRepository repository
+        )
+        {
+            _repository = repository;
+        }
+
+        // Return UnauthorizedResult() or OkObjectResult(ICollection<Store>)
+        public IActionResult GetStores()
+        {
+            // Console.WriteLine("Sample debug output");
+            throw new NotImplementedException("TODO");
+        }
+
+        // Return UnauthorizedResult(), NotFoundResult(), ForbidResult() or OkObjectResult(Store)
+        public IActionResult GetStore(int storeId, bool includeCustomers = false)
+        {
+            throw new NotImplementedException("TODO");
+        }
+
+        // Return UnauthorizedResult(), BadRequestResult() or OkObjectResult(Customer)
+        public IActionResult CreateCustomer(Customer customer)
+        {
+            throw new NotImplementedException("TODO");
+        }
+    }
+
+    public interface IRepository
+    {
+        ICollection<Store> GetStores(Func<Store, bool> filter, bool includeCustomers = false);
+        ICollection<Customer> GetCustomers(int storeId);
+        Customer AddCustomer(Customer customer);
+    }
+
+    public class Store
+    {
+        public int StoreId { get; set; }
+        public string CountryCode { get; set; }
+        public ICollection<Customer> Customers { get; set; }
+    }
+
+    public class Customer
+    {
+        public int CustomerId { get; set; }
+        public int StoreId { get; set; }
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+    }
+}
+
+
+UnauthorizedResult()` (401)              |If `x-test-country-code` header is empty, null, whitespace or request contains multiple `x-test-country-code` headers|
+|`GetStores()`                                           |`OkObjectResult(ICollection<Store>)` (200)|If provided data were correct                                                                                        |
+|`GetStore(int storeId, bool includeCustomers = false)`  |`NotFoundResult()` (404)                  |If store was not found                                                                                               |
+|`GetStore(int storeId, bool includeCustomers = false)`  |`ForbidResult()` (403)                    |If `x-test-country-code` header's value does not match store's **CountryCode**                                       |
+|`GetStore(int storeId, bool includeCustomers = false)`  |`UnauthorizedResult()` (401)              |If `x-test-country-code` header is empty, null, whitespace or request contains multiple `x-test-country-code` headers|
+|`GetStore(int storeId, bool includeCustomers = false)`  |`OkObjectResult(Store)` (200)             |If provided data were correct                                                                                        |
+|`CreateCustomer(Customer customer)`                     |`UnauthorizedResult()` (401)              |If `x-test-country-code` header is empty, null, whitespace or request contains multiple `x-test-country-code` headers|
+|`CreateCustomer(Customer customer)`                     |`BadRequestResult()` (400)                |If incorrect data were provided (provided  `Customer` is not correct)                                                |
+|`CreateCustomer(Customer customer)`                     |`OkObjectResult(Customer)` (200)          |If provided data were correct                                                                                        |
+|--------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebApi.Tests
+{
+    public class ApiController : Controller
+    {
+        public const string CountryCodeHeaderName = "x-test-country-code";
+
+        private readonly IRepository _repository;
+
+        public ApiController(
+            IRepository repository
+        )
+        {
+            _repository = repository;
+        }
+
+        // Return UnauthorizedResult() or OkObjectResult(ICollection<Store>)
+        public IActionResult GetStores()
+        {
+            // Console.WriteLine("Sample debug output");
+           var headerCountryCode = string.Empty;
+          if (Request.Headers.TryGetValue("x-test-country-code",  out headerValues))
+            {
+              headerCountryCode = headerValues.FirstOrDefault();
+            }
+        if (String.IsNullOrEmpty(headerCountryCode))
+         {
+            return Unauthorized();
+          }
+         var filteredResult = from s in _repository.GetStores()
+                    where s.CountryCode= ""                   
+                    select s;
+
+        if (result == null)
+              {
+                return NotFound();
+             }
+
+            return Ok(result);
+           
+        }
+
+        // Return UnauthorizedResult(), NotFoundResult(), ForbidResult() or OkObjectResult(Store)
+        public IActionResult GetStore(int storeId, bool includeCustomers = false)
+        {
+            var headerCountryCode = string.Empty;
+          if (Request.Headers.TryGetValue("x-test-country-code",  out headerValues))
+            {
+              headerCountryCode = headerValues.FirstOrDefault();
+            }
+        if (String.IsNullOrEmpty(headerCountryCode))
+         {
+            return Unauthorized();
+          }
+
+          //if does not match to store country code then return forbidder : return Forbid();
+         var filteredResult = from s in _repository.GetStores()
+                    where s.CountryCode= headerCountryCode                   
+                    select s;
+
+        if (result == null)
+              {
+                  return Forbid();
+               // return NotFound();
+             }
+
+            return Ok(result);
+        }
+
+        // Return UnauthorizedResult(), BadRequestResult() or OkObjectResult(Customer)
+        public IActionResult CreateCustomer(Customer customer)
+        {
+           // throw new NotImplementedException("TODO");
+
+            //For Incorrect data : Bad Reqst =>BadRequest();  
+             if (String.IsNullOrEmpty(customer))
+             return BadRequest();
+
+             //If created successfull then Ok empty result 
+              return Ok();  
+
+        }
+    }
+
+    public interface IRepository
+    {
+        ICollection<Store> GetStores(Func<Store, bool> filter, bool includeCustomers = false);
+        ICollection<Customer> GetCustomers(int storeId);
+        Customer AddCustomer(Customer customer);
+    }
+    public class Repository : IRepository
+    {
+         ICollection<Store> GetStores(Func<Store, bool> filter, bool includeCustomers = false)
+         {
+            ICollection<Store> sData = new ICollection<Store>();
+
+          return sData;
+         }
+        ICollection<Customer> GetCustomers(int storeId)
+        {
+            throw new NotImplementedException("aaaa");
+        }
+        Customer AddCustomer(Customer customer)
+        {
+            throw new NotImplementedException("aaaa");
+        }
+    }
+
+    public class Store
+    {
+        public int StoreId { get; set; }
+        public string CountryCode { get; set; }
+        public ICollection<Customer> Customers { get; set; }
+    }
+
+    public class Customer
+    {
+        public int CustomerId { get; set; }
+        public int StoreId { get; set; }
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+    }
+}
+
+
+
+=========================================================================================

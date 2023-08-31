@@ -1,0 +1,59 @@
+=======
+diff between unique and primary key : 
+Cross Join -
+SQL to get current dateTime - 
+SP Vs UDF-
+Union vs Union ALL-
+Truncate Vs Delete-
+COALESCE operator : 
+Floor function : 
+check locks in database : 
+primary key on varchar column: 
+Primary key Vs Unique Key - 
+Constraints-
+Are NULL values same as that of zero or a blank space?  - 
+different operators available in SQL - 
+DELETE vs TRUNCATE Vs Drop - 
+-  Scenario based queries - 
+-  Performance optimisation - 
+- Stuff / substring - 
+
+========
+https://stackoverflow.com/questions/20635796/bulk-update-in-c-sharp
+
+ry out SqlBulkTools available on Nuget.
+
+var bulk = new BulkOperations();
+var records = GetRecordsToUpdate();
+
+using (TransactionScope trans = new TransactionScope())
+{
+    using (SqlConnection conn = new SqlConnection(ConfigurationManager
+    .ConnectionStrings["SqlBulkToolsTest"].ConnectionString))
+    {
+        bulk.Setup<MyTable>()
+            .ForCollection(records)
+            .WithTable("MyTable")
+            .AddColumn(x => x.SomeColumn1)
+            .AddColumn(x => x.SomeColumn2)
+            .BulkUpdate()
+            .MatchTargetOn(x => x.Identifier)
+            .Commit(conn);
+    }
+
+    trans.Complete();
+} 
+
+2)	
+I would insert new values in a temporary table and then do a merge against the destination table, something like this:
+
+MERGE [DestTable] AS D 
+USING #SourceTable S
+    ON D.ID = S.ID
+WHEN MATCHED THEN 
+    UPDATE SET ...
+WHEN NOT MATCHED 
+THEN INSERT (...) 
+VALUES (...);
+
+3)

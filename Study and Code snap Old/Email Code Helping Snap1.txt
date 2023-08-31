@@ -1,0 +1,60 @@
+=================================================
+======== Email Attachment 
+https://www.emailarchitect.net/eagetmail/sdk/html/object_ssl.htm
+https://www.emailarchitect.net/eagetmail/sdk/html/o_mailclient.htm
+Microsoft.Office.Interop.Outlook
+
+C:\Users\paaskar\AppData\Local\Microsoft\Outlook\PAaskar@slb.com.ost
+Microsoft.Exchange.WebServices
+
+Working with EAGetMail : C:\Data\Project\DOREmailAzure\DOREmailAzure 
+same code is not working in branch ReadEmailUsingEAGetMail
+
+Intouch ticeket id for it 6948359 
+
+=====================
+dataList.Where(x=>"FSF-2-HF076-M266".Contains(x.ItemName)).ToList()
+
+===============================================
+ var emailAddress = 111paaskar@slb.com :      The remote server returned an error: (401) Unauthorized.
+ var emailAddress = "slb\\paaskar";  : The remote server returned an error: (401) Unauthorized.
+
+ var emailAddress = "paaskar@slb.com" :         Mailbox does not exist. : When correct email id sent
+ 
+ For Default Port and SSLConnection fALSE : The remote server returned an error: (403) Forbidden.
+ port 143 and SSLConnection : false : The remote server returned an error: (403) Forbidden.
+ 
+   :  No such host is known. No such host is known.
+ 
+ 
+ https://nl0230exccas.dir.slb.com/
+ ----------------------------- 
+ For POp3 :  MailServer oServer = new MailServer(exchangeServer,
+                    emailAddress, password, false,
+                    ServerAuthType.AuthLogin, ServerProtocol.Pop3);
+ 
+ Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ 
+ 
+ The requested security protocol is not supported.
+ 
+ 
+ //https://www.emailarchitect.net/eagetmail/sdk/html/object_ssl.htm
+                MailServer oServer = new MailServer(exchangeServer,
+                                        emailAddress,
+                                        password,
+                                        ServerProtocol.ExchangeEWS);
+
+                //MailServer oServer = new MailServer(exchangeServer,
+                //    emailAddress, password, false,
+                //    ServerAuthType.AuthLogin, ServerProtocol.Pop3);
+
+                // Exchange Web Service
+                MailServer oServer = new MailServer("myserveraddress",
+                    "myuser", "mypassword", false,
+                    ServerAuthType.AuthLogin, ServerProtocol.ExchangeEWS);
+
+                // Exchange Web Service SSL
+                MailServer oServer = new MailServer("myserveraddress",
+                    "myuser", "mypassword", true,
+                    ServerAuthType.AuthLogin, ServerProtocol.ExchangeEWS);

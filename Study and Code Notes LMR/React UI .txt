@@ -1,0 +1,16 @@
+
+Lookin forward to work with you all
+
+
+React developer Tools - chrome extension 
+
+VSCode extension 
+Thunder client - alternative for postman - VSCode extension
+ES7 React/Redux/GraphQL/React-native snippet - kind of intelisence 
+Bracket pair 
+Auto rename Tag 
+live server 
+prettier - code formatter 
+
+
+

@@ -1,0 +1,40 @@
+====Isolated Plan 
+https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans
+
+An app service always runs in an App Service plan. In addition, Azure Functions also has the option of running in an App Service plan. An App Service plan defines a set of compute resources for a web app to run.
+
+The Isolated service plan is designed to run mission critical workloads, that are required to run in a virtual network. The Isolated plan allows customers to 
+
+====
+Azure Service Bus 
+uses the Advanced Message Queuing Protocol (AMQP) 
+platform-as-a-service (PaaS)
+
+ARM hindi - https://www.youtube.com/watch?v=2lgGqrRaqo8&list=PLmCXsOwg2OK4Lx3yJZ2qqLyH2yYvXhUX8
+ARM : Infra as a code
+Portal 
+CLI 
+ARM template 
+Biceps 
+
+ARM - Json -> element 
+1. schema 
+2. contentVersion 
+apiProfile , paramerts , varibale 
+3. resources 
+outputs
+
+VSCode me install ARMTool extension 
+Azure Developer CLI (azd) supports multiple infrastructures as code (IaC) providers, including: Bicep. Terraform
+
+=========== 
+Default timeout : Azure Function : 30 mins
+Consumption plan is 10 minutes. As mentioned by others, you will have to change your plan to Dedicated App service plan or Premium plan.
+These plans do not have a timeout limit.
+
+===== PArentPay PArity  32 : Cab 
+Uk interview - switch case, string, and string builder diff , class object related call by value or call by ref
+Application  pool, app insight, azure basics for deployment, Azure Deployment 
+
+Key technologies being used are C# .net, React, Docker, Kubernetes, Microservices, Azure Service Bus.
+Skills Set - Azure, .NET, .NET Core, c#, SQL, Agile, windows Services

@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=vLNDaZuA3Dc
+AWS SQS Architecture : simple queue service 
+Visibility timeout period : 30 sec default , 
+
+Elastic service cloude , 
+Standard - random order 
+ and FIFO queue 
+
+Console.aws.amazon.com 
+
+Acess policy : Basic or advance 
+Dead letter queue - if no consumer pics the  message

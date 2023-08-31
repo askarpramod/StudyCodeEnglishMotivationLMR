@@ -1,0 +1,198 @@
+
+
+info : 6.6
+WU : 10.5
+PSL : 
+==========  #Login #Authentication ==========================
+https://code-maze.com/angular-authentication-aspnet-identity/  seems to be good article
+
+============#TPL #Task.WhenAll
+
+Let me introduce you to Task.WhenAll. It's the key to your relief.
+
+It creates a task that will complete when all of the supplied tasks have completed , additionally:
+- It returns a Task
+- It can take List and Array in parameter
+- It has four overloads and takes 1 parameter
+- This method comes from System.Threading.Tasks
+- For more readability I prefer way 1 described in picture
+
+Uses
+- Helpful in making multiple API calls
+- When you want to execute multiple tasks concurrently
+- It waits for all tasks to be completed before continuing
+- It can improve performance by executing process in parallel
+
+Issues
+- Its difficult to debug them
+- It consumes a lot of resources if task list is big
+
+
+Namespace: System.Threading
+Assembly:System.Threading.dll
+public class SemaphoreSlim : IDisposable
+
+Represents a lightweight alternative to Semaphore that limits the number of threads that can access a resource or pool of resources concurrently.
+
+
+========================================
+
+HCL John Deere
+https://www.linkedin.com/in/jeyaranjan-chitharanjan-9b568537/
+https://www.linkedin.com/in/sandip-jaigude-28b9991a/
+
+
+
+input: one two three one two : 
+
+output: ones twos three ones twos
+
+Colectionhold data 
+Dictinary <string ,int> one : 2
+
+dictionryObj.ContainKey() 
+ two : 1
+ 
+ loop main colelection :
+
+
+ 
+ var selected = dic.Where(x=>x.val > 1);
+ foreach (obj in selected)
+ {
+   
+ }
+ Colllection1 : 
+ 
+===========
+string inputText = "one two three one two";
+List<string> GetPluralOfString(string inputText )
+{
+  //List<string>() tempString = inputText.Split({ ' ' });
+  string[] tempString = inputText.Split({ ' ' });
+  Dictionary<string,int> dicString = new Ditinary<string, int>();
+  
+  foreach(item in tempString)
+  {
+    if(dicString.ContainKey(item))
+	{
+	  dicString[item] =dicString[item] + 1;
+	}
+	else 
+	{
+	 dicString.Add(item,1);
+	}
+  }
+  var selectedStrings = dicString.Where(x=>x.Value > 1);
+  foreach(item in selectedStrings)
+  {
+     inputText.Replace(item.Key, item.Key+"s");
+  }
+  
+
+}
+  List<string> iputList = 
+  =========================================
+  int GetAngleOFTime(string inputString)
+{
+   int hr =  3;
+   int  min = 0;
+   int hrAngleFactor= 30;
+   int minAngleFacotr = 6;
+   int angleForHr = hr * hrAngleFactor;
+int angleForMin = min*minAngleFacotr;
+if(angleForHr >angleForMin )   
+{
+}
+else
+{
+
+}   
+}
+
+======================= @ViewData @ViewBag @TempData ==============================
+https://www.c-sharpcorner.com/blogs/viewdata-vs-viewbag-vs-tempdata-in-mvc1
+
+ViewData : ViewData is Faster than ViewBag
+ List<string> Student = new List<string>();  
+      Student.Add("Jignesh");  
+      Student.Add("Tejas");  
+      Student.Add("Rakesh");  
+   
+      ViewData["Student"] = Student;  return View();  
+	<% foreach (var student in ViewData["Student"] as List<string>)    
+ To transfer data from controller to view.  ViewData is nothing but a dictionary of objects and it is accessible by string as key. 	  
+ 
+ ViewBag is able to set and get value dynamically : 
+ ViewBag.Student = Student;  
+      return View();  
+	  <% foreach (var student in ViewBag.Student) 
+	  
+Temp Data : Uses Session :  TempData helps us to transfer data between controllers or between actions
+
+TempData is a dictionary which is derived from TempDataDictionary class.
+ TempData is stored data just like live session for short time. 
+ TempData keeps data for the time of HTTP Request, which means that it holds data between two consecutive requests. 
+ TempData helps us to transfer data between controllers or between actions.	  
+	  TempData["Student"] = Student;  
+ <% foreach (var student in TempData["Student"] as List<string>)  	  
+=========================================
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+
+// To execute C#, please define "static void Main" on a class
+// named Solution.
+
+// Are Equal
+// Example 1: apple, apple
+// Example 2: test1, 1etst
+
+// Are not Equal
+// Example 1: test, test1
+// Example 2: test, sets
+
+class Solution
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine(AreEqual("test1", "1test"));
+    }
+    
+    private static bool AreEqual(string input1, string input2)
+    {
+         //Write your code here
+        bool areEqual = false;
+        if(input1.Length != input2.Length)
+            return areEqual;
+       
+        var inputArr1 = input1.ToCharArray();
+        Dictionary<char,int> dicInput1 = new Dictionary<char,int>();
+       // foreach(char item in input1)
+        for(int i=0; i< dicInput1.Count(); i++)
+        {
+            if(dicInput1.ContainsKey[item])
+                dicInput1[item]=dicInput1[item]+1;
+            else
+                dicInput1.Add(item,1);
+        }
+        
+        foreach(var item in dicInput1)
+        {
+           if( !input2.ToCharArray().Where(x=>x==item).Count() == item.Value ) 
+           {
+               return areEqual;
+           }
+        }
+        
+        
+        return true;
+    }
+}
+
+
+Pluggable caching system
+
+====================================
+	  

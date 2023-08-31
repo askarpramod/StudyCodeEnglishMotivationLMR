@@ -1,0 +1,37 @@
+Venkat dot net core text 
+https://csharp-video-tutorials.blogspot.com/2019/01/aspnet-core-tutorial-for-beginners.html 
+https://www.c-sharpcorner.com/article/containerize-your-net-core-application-using-docker/
+
+Azure Cousre LIst : blue TShirt - Tutorials Point (India) Ltd.
+https://www.youtube.com/watch?v=xDBMBtXGogA&list=PLWPirh4EWFpF85G87sm-r-za5ku4cI-u-&index=6
+
+4-ASP NET core project file 
+
+.csproj file : file added and removed is not included in .csproj file, it refers all the files insidd the folder
+
+  Target Framework inside xyz.csproj xml : net451 vs netcoreapp2.2
+  Version number not specified for group of packages (metapackage Microsoft.AspNetCore.App)
+  
+ 5 - Main method in asp net core
+    1.1 Program.cs => MAin has call for => CreateWebHostBuilder(args).Build().Run(); 
+	1.2 Startup.cs=> has ConfigureService and Configure 
+   ConfigureService : IServiceCollection services
+   Configure  : IApplicationBuilder app , IHostingEnvironment env
+   
+  6 - ASP NET Core in process hosting
+   CreateWebHostBuilder=> Setting up 
+   
+  7 - ASP NET Core out of process hosting
+  
+8 -
+
+9 -
+
+10 -
+
+11 -
+
+12--
+  
+  
+  

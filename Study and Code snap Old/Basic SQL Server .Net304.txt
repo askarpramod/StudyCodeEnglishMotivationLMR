@@ -1,0 +1,646 @@
+.NET 304 : Basic SQL Server (Design and Implementation)
+
+
+
+===============================================================================================
+If we create Foreign Key constraint on a table with Cascade option as "CASCADE". When we try to delete a record from a Parent table which is being referenced by child table what would be the correct output ?
+It will just Delete Record from Parent Table
+It will Just Delete referencing records from Child Table
+It will give error as Delete statement conflicted with Reference Constraint
+It will delete referencing rows from child Table along with the corresponding record from Parent Table
+
+===============================================================================================
+_ is the primary data file containing the startup information for the database and points to the other files in the database.
+Primary File ( .mdf )
+Secondary File (.ndf )
+Transaction Log (.ldf )
+None of the above
+===============================================================================================
+While creating "Contact" Table, which of the following option will correctly create Foreign Key Constraint on column "Emp_Id" which references Id column of Employee Table.
+
+Create Table Contact
+(
+Id int,
+Details varchar(MAX),
+Emp_Id int Foreign Key Employee(Id)
+
+)
+
+Create Table Contact
+(
+Id int,
+Details varchar(MAX),
+Emp_Id int Foreign Key References Employee.Id
+
+)
+Create Table Contact
+(
+Id int,
+Details varchar(MAX),
+Emp_Id int Foreign Key References Employee(Id)
+
+)
+B & C
+
+===============================================================================================
+
+What would be the output of following piece of code?
+
+
+Declare @xml xml
+
+
+set @xml = '<Root>
+
+<Employee Name="Ken"> </Employee>
+<Employee Name="Bob"> </Employee>
+
+</Root>'
+
+select @xml.value('(/Root/Employee/@Name)[1]','varchar(50)')
+It will return two rows with Values as "Ken" and "Bob" respectively
+It will give error
+It will return single Value "Ken"
+It will return single Value "Bob"
+===============================================================================================
+Which of the following is used to retrieve XML data with Namespaces
+
+WITH XMLNAMES
+WITH XMLSPACES
+WITH XMLNAMESPACES
+None of the above
+
+===============================================================================================
+Which of the following is not database object ?
+Tables
+Triggers
+Powershell
+Functions
+
+===============================================================================================
+Which of the following statements are True
+( Check all that apply )
+
+Multiple UNIQUE constraints can be defined on a table.
+We can define multiple Check Constraints on single Column of a Table
+
+Multiple Primary Constraints Can be defined on a single Table
+We can have multiple Foreign Key Constraints on a single Table
+===============================================================================================
+
+=====Which of the following constraint does not enforce anything
+Check
+Primary
+Foreign
+Unique
+Default
+==========================================================================================
+In which of the following modes by default Table name or it's alias is retrieved as Name of the individual XML element.
+RAW
+AUTO
+EXPLICT
+PATH
+
+===============================================================================================
+__ data files are optional, are user-defined, and store user data
+Primary File ( .mdf )
+Secondary File (.ndf )
+Transaction Log (.ldf )
+None of the above
+
+
+===============================================================================================
+If Employee Table has following Data:
+
+
+ID     EmployeeCode      FirstName      LastName
+-----------------------------------------------------
+2            123                      Guy             Gilbert
+1            567                      ken              bob
+
+
+If we execute below query.
+
+Select EmployeeCode 'Employee/EmployeeCode',
+
+  FirstName 'Employee/FirstName',
+
+  LastName 'Employee/LastName'
+
+from Employee FOR XML PATH
+
+ 
+
+Which of the following is the correct Output
+
+
+<row>
+  <Employee>
+    <EmployeeCode>123</EmployeeCode>
+    <FirstName>Guy</FirstName>
+    <LastName>Gilbert</LastName>
+  </Employee>
+</row>
+<row>
+  <Employee>
+    <EmployeeCode>567</EmployeeCode>
+    <FirstName>ken</FirstName>
+    <LastName>bob</LastName>
+  </Employee>
+</row>
+
+
+<row>
+
+    <EmployeeCode>123</EmployeeCode>
+    <FirstName>Guy</FirstName>
+    <LastName>Gilbert</LastName>
+
+</row>
+<row>
+
+    <EmployeeCode>567</EmployeeCode>
+    <FirstName>ken</FirstName>
+    <LastName>bob</LastName>
+</row>
+
+
+ <Employee>
+    <EmployeeCode>123</EmployeeCode>
+    <FirstName>Guy</FirstName>
+    <LastName>Gilbert</LastName>
+  </Employee>
+
+
+  <Employee>
+    <EmployeeCode>567</EmployeeCode>
+    <FirstName>ken</FirstName>
+    <LastName>bob</LastName>
+  </Employee>
+
+
+<row ID="2">
+  <Employee>
+    <EmployeeCode>123</EmployeeCode>
+    <FirstName>Guy</FirstName>
+    <LastName>Gilbert</LastName>
+  </Employee>
+</row>
+<row ID="1">
+  <Employee>
+    <EmployeeCode>567</EmployeeCode>
+    <FirstName>ken</FirstName>
+    <LastName>bob</LastName>
+  </Employee>
+</row>
+===============================================================================================
+
+Which of the following piece of code will Add Primary key on Column Id of existing Product Table.
+(Assume that Product Table does not have any Primary Key.)
+
+( Check all that apply )
+
+Alter Table Product
+
+Add Constraint PK_Id Primary Key (Id)
+
+
+Alter Table Product
+
+Add Constraint Primary Key (Id)
+
+
+Alter Table Product
+
+Add Primary Key (Id)
+
+
+Alter Table Product
+
+Add Primary Key on (Id)
+===============================================================================================
+State True or False. We can include sub queries while adding Check Constraint
+True
+False
+===============================================================================================
+Which of the following data type you would use to store up to 2 GB text data.
+
+
+ntext
+
+
+char
+
+
+xml
+
+
+varchar(MAX)
+===============================================================================================
+XML Namespaces can be used with which of the following Modes
+( Check all that apply )
+RAW
+EXPLICIT
+AUTO
+PATH
+
+===============================================================================================
+
+State True or False. By default value of Computed column is not stored physically on disk
+True
+False
+===============================================================================================
+Suppose while Creating Clustered Index if you want to leave 30% of each leaf page empty which of the following syntax you will use.
+Create Clustered Index IX_id on Item1(Id)
+With(FillFactor=30)
+Create Clustered Index IX_id on Item1(Id)
+FillFactor=30
+
+Create Clustered Index IX_id on Item1(Id)
+With(FillFactor=70)
+Create Clustered Index IX_id on Item1(Id)
+===============================================================================================
+
+Identify the database schema name from the below query.
+SELECT * FROM MyServer.AdventureWorks.HumanResources.Employee
+MyServer
+AdventureWorks
+HumanResources
+Employee
+
+
+===============================================================================================
+Cascading Referential Integrity applies to which of the following statements
+( Check all that apply )
+Insert
+Update
+Select
+Delete
+===============================================================================================
+In which of the following scenarios Custom Data Types can be used in SQL Server
+( Check all that apply )
+Can be used as Data Type for a Parameter in Stored Procedure
+Can be used to define data type of variable in SQL batches
+Can be used for defining Data Type of Column of a Table
+Can be used in User defined function
+===============================================================================================
+
+_database is used as a template for all other databases that are created.
+model
+master
+msdb
+tempdb
+===============================================================================================
+
+Which of the following constraint ensures that there are no duplicate rows
+Entity
+Domain
+Referential
+All of the above
+===============================================================================================
+Features of SQL Server 2014 are :
+Column oriented database
+Support for 32-bit and 64-bit processors
+In memory database
+All of Above
+===============================================================================================
+In which of the following modes by default column Names are retrieved as child elements
+AUTO
+RAW
+PATH
+None of the Above
+
+===============================================================================================
+State True or Flase.Index scan will scan through all rows of a Table
+True
+False
+
+===============================================================================================
+Suppose there is a Table ProductReview. On this Table if we want to create Index on Columns ProductID and ReviwerName.And also mention "Comments" column as Included Column.Which of the following is the correct syntax to achieve this.
+
+CREATE CLUSTERED INDEX IX_ProductReview_ProductID_ReviewerName
+ON ProductReview (ProductID, ReviewerName)
+INCLUDE (Comments);
+
+CREATE NONCLUSTERED INDEX IX_ProductReview_ProductID_ReviewerName
+ON ProductReview (ProductID, ReviewerName)
+INCLUDE (Comments);
+
+CREATE NONCLUSTERED INDEX IX_ProductReview_ProductID_ReviewerName
+ON ProductReview (ProductID, ReviewerName)
+A,B 
+===============================================================================================
+
+_ database holds all temporary tables, temporary stored procedures, and any other temporary storage requirements generated by SQL Server.
+model
+master
+msdb
+tempdb
+===============================================================================================
+Which of the following is the correct piece of code which will add new Column Named as "RollNo" to already created Table "Student".
+alter table Student add column RollNo varchar(50)
+alter table Student modify column RollNo varchar(50)
+alter table Student add RollNo
+alter table Student add RollNo varchar(50)
+
+===============================================================================================
+Which of the following are Fixed length Data Types
+( Check all that apply )
+int
+bit
+varchar
+boolean
+===============================================================================================
+Suppose we have following xml document
+
+declare @xml xml
+
+set @xml='<Root>
+<Student Id="1" Name="Ramesh"> </Student>
+<Student Id="2" Name="Suresh"> </Student>
+</Root>
+'
+
+If we want to check whether above xml has element which contains Id value as 1.Which of the following is the correct option.
+
+
+select @xml.exist('/Root/Student/[@Id="1"]')
+
+
+select @xml.exist('/Root/Student[Id="1"]')
+
+
+select @xml.exist('/Root/Student[@Id]')
+
+
+select @xml.exist('/Root/Student[@Id="1"]')
+
+===============================================================================================
+If you want to retrieve the information about index (Named as 'IX_P_ID' ) created on a Table "Product", which of the following commands will give you index information?
+( Check all that apply )
+exec sp_helpindex 'Product'
+exec sp_help_index 'Product'
+exec sp_help 'Product'
+select * from sys.indexes where Name ='IX_P_ID'
+===============================================================================================
+Generally large number of indexes on a table can make which of the following operations slower ?
+( Check all that apply )
+Select
+Insert
+Update
+Delete
+
+===============================================================================================
+Which of following is database object?
+Tables
+Triggers
+Functions
+All of Above
+
+===============================================================================================
+State True or False.
+Before we can add data to our database, we'll need to create at least one table.
+True
+False
+
+===============================================================================================
+Suppose we have to create a Custom Data Type named as "LocalAddress". It should be created using varchar(100) data type.
+And it should not allow NULL. Which of the following is the correct syntax for it?
+Create Type LocalAddress varchar(100) Not Null
+Create Type LocalAddress From varchar(100)
+Create Type LocalAddress From varchar(100) Not Null
+Create Type LocalAddress For varchar(100) Not Null
+
+===============================================================================================
+Suppose we have created a table using following SQL script
+
+
+CREATE TABLE [dbo].[Persons](
+ [ID] [int] Primary key ,
+ [Name] [varchar](255) NOT NULL,
+ [FirstName] [varchar](255) NULL,
+ [Address] [varchar](255) NULL
+)
+
+After creating above table if we try to run the below SQL statement what will happen?
+
+Create unique Clustered Index IX_Name on Persons(Name)
+
+
+It will create unique Clustered Index on Name column of Persons table.
+
+
+It will create unique Non Clustered Index on Name column of Persons table.
+
+
+It will just create unique Index on Name column of Persons table.
+
+
+It will give error.
+
+
+
+===============================================================================================
+Which of the following method is used to retrieve rowset from XML document
+OPENXML
+USEXML
+FORXML
+OPENXMLDATA
+
+===============================================================================================
+Which of the following is the correct syntax for creating Primary XML Index ?
+Create XML Index IX_Prod_Tag
+on Product(Tag)
+Create Primary XML Index
+on Product(Tag)
+Create Primary XML Index IX_Prod_Tag
+on Product(Tag)
+Create Primary XML Index IX_Prod_Tag
+on Product.Tag
+===============================================================================================
+Which of the following constraint will automatically create Clustered Index on that column.
+
+Primary Key Constraint
+Unique Constraint
+Foreign Key Constraint
+None of the Above
+
+===============================================================================================
+______ can be used to connect to Multiple databases on as Multiple Servers.
+Microsoft Management Console
+Enterprise Manager
+SQL Manager
+A & C
+
+===============================================================================================
+_ database stores system level information such as user accounts, configuration settings, and info on all other databases.
+model
+master
+msdb
+tempdb
+===============================================================================================
+
+Which of the following are correct syntax for Table Creation which will contain column "Id" as integer Identity column and another column "Name" which is varchar field.
+
+( Check all that apply )
+
+Create Table Product_Master
+(
+  Id int ,
+  Name varchar(50)
+)
+
+
+Create Table Product_Master
+(
+  Id int Identity,
+  Name varchar(50)
+)
+
+
+Create Table Product_Master
+(
+  Id int Identity(1,1),
+  Name varchar(50)
+)
+
+
+Create Table Product_Master
+(
+  Id int Identity
+  Name varchar(50)
+)
+===============================================================================================
+State True or False.
+One of the prerequisites for SQL Server 2014 is .NET 3.5 Framework.
+True
+False
+
+===============================================================================================
+Which of the following statements are True regarding Custom Data Types.
+Custom Data Types are created for a specific Table in SQL Server
+Custom Data types are created for a specific Database.
+We can define Custom Data Type once and can be used in different databases
+B & C
+===============================================================================================
+
+Which of the following operating system is supported by SQL Server 2014?
+Windows 8 RTM
+Windows Vista SP2
+Windows Server 2012
+All of Above
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================

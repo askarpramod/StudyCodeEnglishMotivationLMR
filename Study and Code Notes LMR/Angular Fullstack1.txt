@@ -1,0 +1,126 @@
+
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230808_155106
+
+
+
+npm uninstall -g @angular/cli
+
+npm install -g @angular/cli@latest
+
+npm install -g @angular/cli
+
+node --version
+ng version
+
+extentions for VSCode for Angular development -
+ESLint -
+Angular Snippets Version 16 - john papa
+CSS Formatter 
+Angular Language Service
+Intellisense for CSS class names in HTML
+Path Intellisense
+
+===============
+
+
+
+===============
+
+2Way Data binding 
+<input [(ngModel)]="data"  type="text">
+  <br> <br>
+  <h2> You entered the data:  {{data}}</h2>
+ 
+-----------------
+
+==============Angular Question 
+Angular -
+Angular features
+Reactive forms and validations
+Communication between components
+Life cycle hooks
+Change detection in angular
+Observable vs promise
+Auth guards
+Router life cycle
+State management in angular
+Interceptors and it’s role
+Error handling
+Chaining of interceptors
+Performance optimisation techniques in angular
+Strict type checking in angular
+Decorators in angular
+Interfaces in angular
+How angular applications works
+Aot vs jit in angular
+Internationalization
+Angular templates, directives
+Dependancy injection in angular
+Unit testing in angular
+Ivy compiler
+Animation in angular
+Server side rendering from angular and partial page updates
+
+Angular features
+Reactive forms and validations
+Communication between components
+Life cycle hooks
+Change detection in angular
+Observable vs promise
+Auth guards
+Router life cycle
+State management in angular
+Interceptors and it’s role
+Error handling
+Chaining of interceptors
+Performance optimisation techniques in angular
+Strict type checking in angular
+Decorators in angular
+Interfaces in angular
+How angular applications works
+Aot vs jit in angular
+Internationalization
+Angular templates, directives
+Dependancy injection in angular
+Unit testing in angular
+Ivy compiler
+Animation in angular
+Server side rendering from angular and partial page updates
+-------------
+ forkJoin(Service1.call1, 
+     Service2.call2)
+    .subscribe(([call1Response, call2Response]) => {
+
+or 
+
+import { zip } from "rxjs";
+
+myFun() {    
+   zip(service.api1, service.api2)
+       .subscribe(([response1, response2]) => {
+          console.log(response1);
+          console.log(response2);
+    })
+}
+
+or  
+
+const sourceOne = http.get(obj1.product_id);
+const sourceTwo = http.get(obj2.product_id);
+
+zip(sourceOne, sourceTwo).subscribe(val => {
+    // do something
+});	
+================#company
+infogain some reviews are so bad
+https://www.glassdoor.co.in/Reviews/Infogain-Reviews-E31605.htm
+
+
+2. Candidates must be aware of Azure PaaS Services like (App Services, Azure Storage, Azure SQL, Service Bus, Logic Apps, Azure Functions etc.)
+3. Candidates have experience or are at least aware of Microservices and their design patterns (CQRS, SAGA, 2 Phase Commit etc.)
+
+======================= 
+ 
+  
+  

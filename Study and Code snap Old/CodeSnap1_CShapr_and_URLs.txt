@@ -1,0 +1,667 @@
+
+Light Bill Wagholi : 170-52-44-255-75   0817
+Light Bill Pahur : 12-52-83-031320 8176
+
+Hi Mansi,
+
+Thank you for the schedule detail, I will attend the interview as per schedule.
+
+Thanks,
+Pramod
+
+=========
+Hi 
+
+Thank you for the JD, I am interested in the profile below, please proceed with my Application.
+
+Thanks,
+Pramod
+
+
+========================  Venkat Dot NEt core + some other   =======================================
+Middleware Pipeline : Configure ASP NET Core request processing pipeline :  https://www.youtube.com/watch?v=nt6anXAwfYI
+Links for the lazy from 5:37:
+Part 36 - Delgates In C# - https://www.youtube.com/watch?v=D2h46fvQX04
+37 : Deligate usage : https://www.youtube.com/watch?v=vBOzvNO8lvk
+Part 99 - Lambda Expressions -https://www.youtube.com/watch?v=LDgQ-spnrYY
+
+Venket Dot Net Core List : https://www.youtube.com/watch?v=4IgC2Q5-yDE&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU
+TExt and slide for above Dot net core : https://csharp-video-tutorials.blogspot.com/2019/01/aspnet-core-tutorial-for-beginners.html
+
+Venkat Azure List: https://www.youtube.com/watch?v=-5NzEDnYMck&list=PL6n9fhu94yhVIhqTz-LBfwgz_Amz7rRLp
+Slide for the Azure beginer video list 
+https://www.pragimtech.com/blog/azure/azure-resource-groups/ 
+
+Cloud computing complete tutorial 
+https://www.youtube.com/watch?v=Wn-1OLgxHjQ 
+
+
+Solid Design Principles : https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
+                          https://www.youtube.com/watch?v=gnKx1RW_2Rk  Venkat LSP
+						  https://www.youtube.com/watch?v=5WHKNOTqwsA : Dependecy Inversion Principle KudVenkat
+						  https://www.youtube.com/watch?v=wo06oCBuYYI : Open Close Kud Venkat
+
+=======================   Azure Top Q   ======================================================
+https://www.dotnettricks.com/learn/devops/top-20-azure-devops-interview-questions-answers
+
+https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet/#exercise-2-examine-the--cicd-pipelines-configured-by-azure-devops-project  Good Article
+
+
+
+================================  #Docker =====================================================================
+Good Video : VSCode command to build Core API and Docker : https://www.youtube.com/watch?v=f0lMGPB10bM&t=19s
+https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/run-docker
+https://dotnet.microsoft.com/learn/aspnet/deploy-microservice-tutorial/docker-hub
+  https://dotnet.microsoft.com/learn/aspnet/deploy-microservice-tutorial/azure-tools
+
+=================================== #Deligate #MultiCastDeligate #Func #Action #Predicate ======================
+https://www.tutorialsteacher.com/csharp/csharp-delegates
+
+public delegate void MyDelegate(string msg); //declaring a delegate
+class Program
+{
+================================== Study Links and URL  ======================================================
+
+azure logic apps vs functions
+Functions and Logic Apps are Azure services that enable serverless workloads. Azure Functions is a serverless compute service, whereas Azure Logic Apps provides serverless workflows
+
+
+https://www.guru99.com/uml-class-diagram.html
+https://www.tutorialspoint.com/Association-Composition-and-Aggregation-in-Chash
+https://www.codeproject.com/Articles/330447/Understanding-Association-Aggregation-and-Composit
+
+https://www.c-sharpcorner.com/article/what-is-azure-functions/
+
+
+Dot Net Core Interview Question Answer
+https://www.dotnettricks.com/learn/aspnetcore/top-20-asp-net-core-interview-questions-and-answers
+
+Good QA for C#
+https://www.codingdojo.com/blog/c-interview-questions
+https://www.fullstack.cafe/blog/c-sharp-interview-questions
+
+
+https://www.c-sharpcorner.com/UploadFile/puranindia/C-Sharp-interview-questions/  : Good Question Answer
+
+https://dotnetcorecentral.com/blog/asp-net-core-streaming-application-using-kafka-part-1/
+https://dotnetcorecentral.com/blog/asp-net-core-streaming-application-using-kafka-part-2/
+
+
+
+-- Design patterns
+Edureka : Microservices Design Patterns | Microservices Architecture Patterns : https://www.youtube.com/watch?v=xuH81XGWeGQ
+
+
+Edureca Azure cloude :
+https://www.youtube.com/watch?v=0bPJPiX89K0&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0
+Edureka Azure Devops Deploying CI/CD Pipeline and others
+https://www.youtube.com/watch?v=Ce08Sp9g_JI&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0&index=33
+
+
+
+
+
+============================================== Code and Concept =====================================
+https://www.c-sharpcorner.com/UploadFile/8a67c0/method-overloading-and-method-overriding-in-C-Sharp/
+Code first EF and Unit test 
+https://www.c-sharpcorner.com/article/unit-testing-using-xunit-and-moq-in-asp-net-core/
+
+
+=============================  Code example  ==================================================================== 
+Clock Angle 1 easy and Has lots of example :https://dotnettutorials.net/lesson/how-to-find-the-angle-between-hour-and-minutehands-of-a-clock-at-any-given-time/ 
+Clock Angle 2 with Unit Test : https://www.c-sharpcorner.com/article/find-out-the-angle-between-hour-hand-and-minute-hand-in-c-sharp/
+https://www.c-sharpcorner.com/blogs/finding-distinct-elements-in-a-data-structure-using-c-sharp
+https://stackoverflow.com/questions/756055/listing-all-permutations-of-a-string-integer
+
+Code Example : https://ankitsharmablogs.com/csharp-coding-questions-for-technical-interviews/
+
+https://www.interviewsansar.com/c-program-interview-question-for-practice/
+
+
+
+//Constuctor Call :
+https://www.interviewsansar.com/csharp-programs-practice-class-object-constructor/2/
+https://www.interviewsansar.com/csharp-programs-practice-class-object-constructor/
+https://www.interviewsansar.com/csharp-exercises-solutions-abstract-class/
+
+
+============================================== Design pattern code or concept  ============================================
+https://www.codeproject.com/Tips/769084/Observer-Pattern-Csharp
+
+
+
+
+Singletone : https://csharpindepth.com/articles/singleton
+
+https://enlabsoftware.com/development/how-to-implement-repository-unit-of-work-design-patterns-in-dot-net-core-practical-examples-part-one.html
+
+What is the repository design pattern?
+Repositories are classes or components that encapsulate the logic required to access data sources. They centralize common data access functionality, providing better maintainability and decoupling the infrastructure or technology used to access databases from the domain model layer.
+
+
+What is the unit of work pattern?
+The repository and unit of work patterns are intended to create an abstraction layer between the data access layer and the business logic layer of an application. ... The unit of work class coordinates the work of multiple repositories by creating a single database context class shared by all of them.
+
+============================================== Batch File To start service ============================================
+
+net start ILXKafkaManager
+echo ILXKafkaManagerservice is started 
+
+or 
+net stop ILXKafkaManager
+echo ILXKafkaManagerservice is stopped 
+
+============================================== Microservice Kafka ============================================
+https://dotnetcorecentral.com/blog/asp-net-core-streaming-application-using-kafka-part-1/
+
+https://dotnetcorecentral.com/blog/reactive-extensions-in-net-core/
+
+============================================== Example all possible words ============================================
+https://stackoverflow.com/questions/24756924/how-to-generate-all-possible-words
+
+public IEnumerable<String> GenerateStrings (IEnumerable<char> characters, int length) {
+    if(length > 0) {
+        foreach(char c in characters) {
+            foreach(String suffix in GenerateStrings(characters,length-1)) {
+                yield return c+suffix;
+            }
+        }
+    } else {
+        yield return string.Empty;
+    }
+}
+============================================== Dictionary vs Hashtable ============================================
+https://www.c-sharpcorner.com/blogs/difference-between-dictionary-and-hashtable-in-c-sharp
+
+System.Collections.Generic //: Represents a collection of keys and values.
+      public class Dictionary<TKey, [NullableAttribute(2)] TValue> : ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IDictionary<TKey, TValue>, IReadOnlyCollection<KeyValuePair<TKey, TValue>>, IReadOnlyDictionary<TKey, TValue>, ICollection, IDictionary, IDeserializationCallback, ISerializable where TKey : notnull
+	
+Dictionary
+Dictionary is generic type Dictionary<TKey,TValue>
+Dictionary class is a strong type < TKey,TValue > Hence, you must specify the data types for key and value.
+There is no need of boxing/unboxing.
+When you try to access non existing key dictionary, it gives runtime error.
+Dictionary maintains an order of the stored values.
+There is no need of boxing/unboxing, so it is faster than Hashtable.
+
+
+System.Collections //  Represents a collection of key/value pairs that are organized based on the hash
+		public class Hashtable : ICollection, IEnumerable, IDictionary, ICloneable, IDeserializationCallback, ISerializable
+		
+Hashtable
+Hashtable is non-generic type.
+Hashtable is a weakly typed data structure, so you can add keys and values of any object type.
+Values need to have boxing/unboxing.
+When you try to access non existing key Hashtable, it gives null values.
+Hashtable never maintains an order of the stored values
+Hashtable needs boxing/unboxing, so it is slower than Dictionary.
+
+=============================================  IEnumerable vs IEnumerator =======================
+https://dzone.com/articles/ienumerable-vs-ienumerator
+https://www.c-sharpcorner.com/UploadFile/78607b/difference-between-ienumerable-icollection-and-ilist-interf/  : ToCheck
+
+If we want to iterate through the list (or any collection) at one time, then IEnumerable is the best choice, but if we want to preserve the state of an iteration variable, then we should go with IEnumerator.
+
+IEnumerable has method : IEnumerator GetEnumerator();
+IEnumerator has : object? Current { get; } ,  bool MoveNext();  Reset()
+
+public interface IEnumerator
+    {
+       
+        // Returns:
+        //     The element in the collection at the current position of the enumerator.
+        object? Current { get; }       
+        bool MoveNext();
+        void Reset(); Sets the enumerator to its initial position, which is before the first element
+    }
+	
+https://www.linkedin.com/pulse/ienumerable-vs-icollection-idictionary-ilist-hasan-shahjahan/
+	
+============================================== abstract-class static constructor ============================================
+An abstract call can have static constructor and to note that the static constructor should be private not public or else compiler will flash an error. Hence, program is fine.
+
+
+============================================== SQL Queries and Questions ============================================
+https://www.mssqltips.com/sqlservertip/4322/sql-server-differences-of-char-nchar-varchar-and-nvarchar-data-types/
+
+
+
+============================================== Async await Nice Article ============================================
+https://dev.to/tyrrrz/interview-question-async-await-c-34in 
+
+https://www.c-sharpcorner.com/article/task-and-thread-in-c-sharp/#:~:text=Differences%20Between%20Task%20And%20Thread,-Here%20are%20some&text=The%20Thread%20class%20is%20used%20for%20creating%20and%20manipulating%20a,tasks%20asynchronously%20and%20in%20parallel.&text=A%20Task%20is%20a%20higher%20level%20concept%20than%20Thread.  //ToCheck
+
+
+https://devblogs.microsoft.com/dotnet/configureawait-faq/
+
+============================================== stack vs heap  : Alexey Golub : https://dev.to/tyrrrz ============================================
+
+https://dev.to/tyrrrz/interview-question-heap-vs-stack-c-5aae : Nice Question Answers : 
+https://dev.to/tyrrrz/creative-use-of-extension-methods-in-c-1fe5
+
+============================================== #JavaScript ============================================
+https://dev.to/nehasoni__/playing-with-javascript-objects-k4h
+
+
+
+
+============================================== aaa ============================================
+https://www.c-sharpcorner.com/UploadFile/b1df45/unit-of-work-in-repository-pattern/#:~:text=Unit%20of%20Work%20is%20the,update%2Fdelete%20and%20so%20on.
+
+https://enlabsoftware.com/development/how-to-implement-repository-unit-of-work-design-patterns-in-dot-net-core-practical-examples-part-one.html
+
+https://www.pluralsight.com/guides/csharp-in-out-ref-parameters : good 
+
+============================================== #Azure ============================================
+
+https://www.c-sharpcorner.com/UploadFile/8a67c0/upload-image-in-azure-blob-storage-with-Asp-Net-mvc/
+
+venkat Azure App service Plan : 
+https://www.youtube.com/watch?v=I_Xdd9B7yWA&list=PL6n9fhu94yhVIhqTz-LBfwgz_Amz7rRLp&index=19 
+App Service Plan then App Service =>
+
+Azure Compute Unit : ACU :i think  Computing power 
+
+1. Azure Cloud Shell : Bash or PowerShell
+
+
+============================================== #Collections ============================================
+https://www.tutorialsteacher.com/csharp/csharp-collection
+
+https://www.c-sharpcorner.com/UploadFile/pranayamr/open-close-principle/
+
+============================================== aaa ============================================
+
+extra to check 
+https://www.edureka.co/blog/interview-questions/sql-interview-questions
+https://www.c-sharpcorner.com/UploadFile/a20beb/ienumerable-vs-iqueryable-in-linq/
+https://medium.com/swlh/vending-machine-design-a-state-design-pattern-approach-5b7e1a026cd2
+https://www.c-sharpcorner.com/article/learn-angular-8-step-by-step-in-10-days-component-day-2/
+https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/
+https://codinginfinite.com/top-javascript-articles-past-month/
+
+https://hackernoon.com/my-top-10-javascript-articles-from-2019-we463yfk
+https://dev.to/caiosousa/c-object-oriented-programming-oop-cheat-sheet-5bkf
+https://dev.to/nehasoni__/playing-with-javascript-objects-k4h
+https://dev.to/tyrrrz/creative-use-of-extension-methods-in-c-1fe5
+
+============================================== #WCF #WebAPI #WcfVsWebApi ============================================
+https://www.dotnettricks.com/learn/webapi/difference-between-wcf-and-web-api-and-wcf-rest-and-web-service
+
+Which is better WCF or Web API?
+WEB API is a better choice for simpler, light weight services. WEB API can use any text format including XML and is faster than WCF. WEB API can be used to create full-blown REST Services.
+
+When should we select WCF and Web API?
+WCF is the ideal choice when you need to create a service that supports unique scenarios such as duplex communication, one way messaging and message queues, among others. Web API should be the option when you need to build resource-oriented services over HTTP that can utilize the full features of HTTP.
+
+WCF : 
+ duplex communication, 
+ one way messaging 
+ message queues
+ 
+Http
+HTTPS
+TCP 
+MSMQ 
+NamedPipe  
+
+Web API to Support both Json and XML
+
+Set the followings in App_Start/WebApiConfig.cs
+GlobalConfiguration.Configuration.Formatters.Add(new JsonMediaTypeFormatter());
+GlobalConfiguration.Configuration.Formatters.Add(new XmlMediaTypeFormatter());
+Set application/json or application/xml to Accept header in request-side
+
+
+To Whom Choose Between WCF or WEB API
+Choose WCF when you want to create a service that should support special scenarios such as one way messaging, message queues, duplex communication, etc.
+
+Choose WCF when you want to create a service that can use fast transport channels when available, such as TCP, Named Pipes, or maybe even UDP (in WCF 4.5), and you also want to support HTTP when all other transport channels are unavailable.
+
+Choose Web API when you want to create a resource-oriented service over HTTP that can use the full features of HTTP (like URIs, request/response headers, caching, versioning, various content formats).
+
+Choose Web API when you want to expose your service to a broad range of clients including browsers, mobiles, iphone, and tablets.
+============================================= #Observable Vs #Promise ==================================
+getOrganizationHierarchy(): Observable<any[]> {
+        return this.http.get<any[]>(this.apiOrganizationHierarchy);
+    }
+
+    getWells(): Observable<any[]> {
+        return this.http.get<any[]>(this.opsSolUrl);
+    }
+
+    // Get the well-type at a perticular time.
+    getWellLiftType(filterParameters) {
+        const promise = new Promise((resolve) => {
+            this.http.post(this.getWellLiftTypeUrl, filterParameters).subscribe((response) => {
+                resolve(response);
+            });
+        });
+
+        return promise;
+    }
+============================================ #Infosys ===================================================
+Responsive and CSS HTML5 features 
+Generics 
+Ajax Jquery JS : call http 
+Estimation technic 
+WCF Security 
+WCF Binding for accesing through Java and Dotnet 
+	Concurrency and security 
+Ang - Observable 
+View Data View bag 
+DI container 
+Responsive 
+Team lead + Git Create Branch by command 
+SOA
+Nth Div inside Div : Jquery 
+HtmlHandler and HtmlModule
+
+Learning objectives
+OWASP Top Ten vulnerabilities
+Cross-site scripting
+SQL injection
+Cross-site request forgery
+Storing secrets
+Encrypting Web.config settings
+Password hashing
+Authenticating in the app
+Securing cookies and sessions
+Error handling	
+============================ #ProjectManagement #Estimation#Technique =======================================
+===============================================================================================
+Use the other offer as leverage and not threat 
+Polite and Gratitude
+Would it be appropriate if we discuss .. do not accept or reject offer at the moment you received 
+
+Discuss after lunch .. On thursday ..bcaz they willl think to close it up.
+
+keep Quite and study it ... thank you so much i really thank you for making me offer and 
+i see here .. baseed on my resaech and my experiecne i expect salary in the range of ..
+based on my success in all my previous organization 
+
+============================================== #Edureka Azure Video ============================================
+
+Edureka : Azure Active Directory | Microsoft Azure Tutorial for Beginners | Azure 70-533 Training | Edureka
+https://www.youtube.com/watch?v=OQwQmikCLs4&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0&index=20
+Windows AD vs Azure AD
+
+Machine Learning :
+teaching your machine how to react to a particular situation based on the data
+
+AKS : Introduction To Azure Kubernetes Service (AKS) | Azure Container Service | Azure Training | Edureka
+ https://www.youtube.com/watch?v=o5qkgsyfRao&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0&index=38
+ 
+ language developed in : golang 
+
+
+============================================== #Event Driven Vs #Request Driven  ============================================
+https://danieltammadge.com/2021/02/how-to-prevent-message-loss-when-publishing-events/
+https://danieltammadge.com/2021/01/event-driven-vs-request-driven-architecture-user-registration/#:~:text=The%20Pros%20of%20request%2Ddriven%20vs%20event%2Ddriven&text=Simpler%20to%20develop%2C%20maintain%20and,than%20the%20request%2Ddriven%20solution. below is the Video link 
+https://youtu.be/U-U3bpljZd0 
+
+
+============================================== MS #Resilient - #Fault #tolerent ============================================
+https://dzone.com/articles/making-your-microservices-resilient-and-fault-tole-1
+
+============================================ #Kafka #RabbitMQ =============================================
+https://docs.cloudera.com/documentation/kafka/latest/topics/kafka_performance.html#Handling%20Large%20Messages
+
+https://developer.ibm.com/technologies/messaging/articles/advantages-of-an-event-driven-architecture/
+This messaging backbone can either be based on a traditional publish-subscribe message broker (such as IBM MQ) or a distributed log (such as Apache Kafka). A publish-subscribe message broker allows multiple
+
+
+
+============================================== #Redis ============================================
+https://www.youtube.com/watch?v=jwek4w6als4  good video : https://www.linkedin.com/in/nick-chapsas/
+https://www.youtube.com/watch?v=U3RkDLtS7uY Gaurav Sen : What is Distributed Caching? Explained with Redis! https://www.linkedin.com/in/gaurav-sen-56b6a941/ 
+
+
+============================================== #DB #Designs ============================================
+https://www.youtube.com/watch?v=cODCpXtPHbQ Code Karle Good Video
+
+============================  #Angular ===================
+https://stackblitz.com/edit/angular-c4cxgd?file=src%2Fapp%2Fapp.component.ts  HCL interview 
+https://jsonplaceholder.typicode.com/posts  
+
+============================================= #god ================================
+https://www.c-sharpcorner.com/article/god-object-a-code-smell/#:~:text=The%20God%20object%20is%20a,much%20or%20does%20too%20much.&text=If%20a%20class%20contains%20too,Object%2C%20a%20bad%20programming%20practice.
+
+===================================== #DotNetCore Vs #DotNet #Middleware #ActionFilter============================================
+What makes dot net core platform independent 
+GC
+UnManagedCode
+#Middleware Vs #ActionFilter
+https://channel9.msdn.com/Series/aspnetmonsters/ASPNET-Monsters-91-Middleware-vs-Filters
+https://www.edgesidesolutions.com/middleware-vs-filters-asp-net-core/
+
+
+https://stackoverflow.com/questions/42582758/asp-net-core-middleware-vs-filters
+11 : 
+The execution of middleware occurs before the MVC context becomes available in the pipeline. That is, middleware does not have access to the ActionExecutingContext or the ActionExecutedContext in the case of an ActionFilter for example. What you do have access to is the HttpContext, which will allow you to perform actions on the request as well as the response. Since model binding hasn’t occurred yet, using middleware would not be suited to running a validation function or modifying values. Middleware will also run on every request regardless of which controller or action is called.
+
+On the other hand, filters will only run on specified actions and controllers unless you register the filter globally in the startup. Since you have full access to the context you can also access the controller and action itself.
+
+
+========================================== #Yield #Stateful #Iteration ========================================= 
+Custome iteration without using Temp collection 
+Stateful iteration 
+List<int> myList = new List<int>();
+foreach(int i in RunningTotal())
+{
+ Console.WriteLine(i);
+}
+
+IEnumerable<int> RunningTotal()
+{
+  int runningSum = 0;
+foreach(int i in myList)
+	{
+	runningSum += i;
+	}
+}
+
+---- Fast forward or stateless IEnumerable IQuerable
+==========================================#SingleSignon ==============================================================
+request 
+request pipeline 
+execution pipeline
+startUp => Configure=> Request Processing Pieline 
+ Middleware ::-> Logging -> StaticFiles -> mvc middleware
+Update each middlware using nuget packaging - for static-static file middlware
+Authentication , Authorization , mvc middleware
+
+
+Console.developer.googl.com
+Create Project 
+Goole+ API => Credentiinlas DropDown : Credentions OaUTH consent screan 
+Create OAuth client ID : 
+Url : //localhost /signing-google
+Go StartUpAuth.cs
+app.UseGoogleAuthentication
+{
+clientID :
+Scecret
+}
+============================================= #WoltersKluwar #Priyank =====================================================================
+DI container implementation 
+ Unity container 
+ Service Locater -> FActory and Singltone 
+Middleware 
+Microsoft Library -subscription used for reference and certification 
+
+IComparer ICompare
+
+Non Cluster Index - included columns 
+Secur CORK 
+Pipes , Observable, 
+
+ang design solid application security : 
+DI 
+GC
+handler - thread pool
+repository 
+SQL index 
+harshal : 4 - 5 
+wolter cluver :  
+Interface collection 
+
+Static vs Singletone 
+DI 
+Repo 
+unit testing 
+ang - custome pipes , hooks 
+query 
+yield + web api filter + isolation level 
+
+9 years 
+12+ (Lead )
+Assosiate Product :  
+
+
+
+================================================== #middleware #CustomeMiddleware==========================================================================
+https://exceptionnotfound.net/using-middleware-to-log-requests-and-responses-in-asp-net-core/
+
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    {
+        if (env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+
+        app.UseRouting();
+
+        //Add our new middleware to the pipeline
+        app.UseMiddleware<RequestResponseLoggingMiddleware>();
+
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapControllers();
+        });
+    }
+
+
+public class RequestResponseLoggingMiddleware
+{
+    private readonly RequestDelegate _next;
+
+    public RequestResponseLoggingMiddleware(RequestDelegate next)
+    {
+        _next = next;
+    }
+
+    public async Task Invoke(HttpContext context)
+    {
+        //First, get the incoming request
+        var request = await FormatRequest(context.Request);
+
+        //Copy a pointer to the original response body stream
+        var originalBodyStream = context.Response.Body;
+
+        //Create a new memory stream...
+        using (var responseBody = new MemoryStream())
+        {
+            //...and use that for the temporary response body
+            context.Response.Body = responseBody;
+
+            //Continue down the Middleware pipeline, eventually returning to this class
+            await _next(context);
+
+            //Format the response from the server
+            var response = await FormatResponse(context.Response);
+
+            //TODO: Save log to chosen datastore
+
+            //Copy the contents of the new memory stream (which contains the response) to the original stream, which is then returned to the client.
+            await responseBody.CopyToAsync(originalBodyStream);
+        }
+    }
+
+}//class end	
+-------------------	
+public class MyMiddleware
+{
+private readonly RequestDelegate _next;
+
+public MyMiddleware(RequestDelegate next)  
+{  
+    _next = next;  
+}
+
+public async Task Invoke(HttpContext context)  
+{  
+    //Stuff you want to do for the Request  
+    await _next(context);  
+    //Stuff you want to do for the Response  
+}  
+}
+--------------------------
+
+public class LogRequestAndResponseHandler : DelegatingHandler
+{
+    protected override async Task<HttpResponseMessage> SendAsync(
+        HttpRequestMessage request, CancellationToken cancellationToken)
+    {
+        if (request.Content != null)
+        {
+            // log request body
+            string requestBody = await request.Content.ReadAsStringAsync();
+            Trace.WriteLine(requestBody);
+        }
+        // let other handlers process the request
+        var result = await base.SendAsync(request, cancellationToken);
+
+        if (result.Content != null)
+        {
+            // once response body is ready, log it
+            var responseBody = await result.Content.ReadAsStringAsync();
+            Trace.WriteLine(responseBody);
+        }
+
+        return result;
+    }
+}
+
+There are multiple approaches to generically handle Request/Response logging for every WebAPI method calls:
+
+ActionFilterAttribute: One can write custom ActionFilterAttribute and decorate the controller/action methods to enable logging.
+
+Con: You need to decorate every controller/methods (still you can do it on base controller, but still it doesn't address cross cutting concerns.
+
+Override BaseController and handle logging there.
+
+Con: We are expecting/forcing the controllers to inherit from a custom base controller.
+
+Using DelegatingHandler.
+
+Advantage: We are not touching controller/method here with this approach. Delegating handler sits in isolation and gracefully handles the request/response logging.
+
+For more indepth article, refer this http://weblogs.asp.net/fredriknormen/log-message-request-and-response-in-asp-net-webapi.
+---------
+One of the option you have is using creating a action filter and decorating your WebApiController/ApiMethod with it.
+
+Filter Attribute
+
+public class MyFilterAttribute : System.Web.Http.Filters.ActionFilterAttribute
+    {
+        public override void OnActionExecuting(HttpActionContext actionContext)
+        {
+            if (actionContext.Request.Method == HttpMethod.Post)
+            {
+                var postData = actionContext.ActionArguments;
+                //do logging here
+            }
+        }
+    }
+WebApi controller
+
+[MyFilterAttribute]
+public class ValuesController : ApiController{..}
+or
+
+[MyFilterAttribute]
+public void Post([FromBody]string value){..}
+
+
+===============================================================================================

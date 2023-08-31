@@ -1,0 +1,324 @@
+==============#IRepository #UnitOfWork 
+
+
+EmployeeService
+   private readonly IRepository<Employee> _employeeRepository;
+    public EmployeeService(IConfiguration config, IMapper mapper, IUnitOfWork unitOfWork, ILogger<EmployeeService> logger)
+        {
+            _config = config;
+            _employeeRepository = unitOfWork.GetRepository<Employee>();
+            _seniorityRepository = unitOfWork.GetRepository<Seniority>();
+            _mapper = mapper;
+            _unitOfWork = unitOfWork;
+            _encrypt = new Encryptions(_config["EncryptionData:key"], _config["EncryptionData:IV"]);
+          _logger = logger;
+        }
+		
+		
+
+ public class ExceptionHandlingMiddleware : IMiddleware
+    {
+        public async Task InvokeAsync(HttpContext context, RequestDelegate next)
+        {
+            try
+            {
+                await next(context);
+            }
+            catch (System.Exception ex)
+            {                
+                context.Response.ContentType = "application/json";
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                await context.Response.WriteAsync(ex.Message);//TODO Write some specific message later
+            }
+        }
+    }
+	
+	 public void ConfigureServices(IServiceCollection services)
+        {
+		
+		 services.AddTransient<ExceptionHandlingMiddleware>();
+            services.AddServices();
+		
+		}
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory)
+        {
+            
+            app.UseCors("CareerLeader");
+
+}			
+============ SQL  Good One 
+https://www.c-sharpcorner.com/UploadFile/f0b2ed/temporary-table-vs-temporary-variable-in-sql-server/
+https://www.c-sharpcorner.com/blogs/tips-to-increase-sql-server-stored-procedure-performance2
+=============================  Code example  ==================================================================== 
+
+https://www.c-sharpcorner.com/blogs/finding-distinct-elements-in-a-data-structure-using-c-sharp
+https://stackoverflow.com/questions/756055/listing-all-permutations-of-a-string-integer
+
+Code Example : https://ankitsharmablogs.com/csharp-coding-questions-for-technical-interviews/
+
+https://www.interviewsansar.com/c-program-interview-question-for-practice/
+
+
+
+//Constuctor Call :
+https://www.interviewsansar.com/csharp-programs-practice-class-object-constructor/2/
+https://www.interviewsansar.com/csharp-programs-practice-class-object-constructor/
+https://www.interviewsansar.com/csharp-exercises-solutions-abstract-class/
+
+
+============================================== Design pattern code or concept  ============================================
+https://www.codeproject.com/Tips/769084/Observer-Pattern-Csharp
+
+
+
+
+Singletone : https://csharpindepth.com/articles/singleton
+
+
+============================================== Example all possible words ============================================
+https://stackoverflow.com/questions/24756924/how-to-generate-all-possible-words
+
+public IEnumerable<String> GenerateStrings (IEnumerable<char> characters, int length) {
+    if(length > 0) {
+        foreach(char c in characters) {
+            foreach(String suffix in GenerateStrings(characters,length-1)) {
+                yield return c+suffix;
+            }
+        }
+    } else {
+        yield return string.Empty;
+    }
+}
+============================================== Dictionary vs Hashtable ============================================
+https://www.c-sharpcorner.com/blogs/difference-between-dictionary-and-hashtable-in-c-sharp
+
+
+==============#Async #await #
+https://code-maze.com/csharp-execute-multiple-tasks-asynchronously/
+
+[HttpGet("detail/{id}")]
+public async Task<IActionResult> GetEmployeeDetails(int id)
+{
+     return await Task.fromResult(OK(
+	 new {
+	 Id=id,
+	 Name="Aaaa"
+	 }	 
+	 ))
+}
+
+--
+
+ublic async Task<EmaployeDatails>  ExecuteInarallel(int id)
+{
+ var empTask = _empRepo.getEmp(id);
+ var empSal = _empRepo.getEmpSalDetails(id);
+ var empProj = _empRepo.GetEmpProj(id);
+ 
+ await Task.WhenAll(employeeDetailsTask, employeeSalaryTask, employeeRatingTask);
+    var employeeDetails = await employeeDetailsTask;
+    var employeeSalary = await employeeSalaryTask;
+    var employeeRating = await employeeRatingTask; 
+    return new EmployeeProfile(employeeDetails, employeeSalary, employeeRating);
+	
+
+==============#Generics
+
+Service<T> where T:Class
+{
+int Save(T t);
+
+T Update(T t);
+}
+
+==============#ExtensionMethod
+
+public static string NumberToString(this int num)
+{
+ retunr num.ToString();
+}
+
+==============#car
+
+Interface IVehicle
+{
+  Print();
+}
+
+Class Class Bike : IVehicle
+{
+Public Int Power{get; set;}
+
+Print()
+{
+ Console.W(power);
+ }
+
+}
+
+Class Class Car : IVehicle
+{
+Public Int Power{get; set;}
+
+Print()
+{
+ Console.W(power);
+ }
+
+}
+
+
+Public Class Xyz
+{
+
+  public Print(IVehicle V)
+  {
+     V.print();
+  }
+}
+
+
+==========# Data Structure and Algorithm 
+https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
+https://www.techinterviewhandbook.org/grind75
+
+
+
+
+==========
+https://simsekahmett.medium.com/redis-the-high-performance-in-memory-data-store-695c5a3ff1e4
+
+
+===========#Push pop
+Given two integer arrays pushed and popped each with distinct values, return true if this could have been the result of a sequence of push and pop operations on an initially empty stack, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: pushed = [1,2,3,4,5], popped = [4,5,3,2,1]
+Output: true
+Explanation: We might do the following sequence:
+push(1), push(2), push(3), push(4),
+pop() -> 4,
+push(5),
+pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
+Example 2:
+
+Input: pushed = [1,2,3,4,5], popped = [4,3,5,1,2]
+Output: false
+Explanation: 1 cannot be popped before 2.
+
+Code :
+Public static bool ValidateStackSequesnce(int[] pushed, int[] poped)
+{
+Stack<int> stack = new();
+int j=0, i=0,length=pushed.Length;
+bool a;
+
+while(j< length || i< length)
+{
+  a= false;
+  if(stack.count>0 && stack.Peek()==popped[j] && j< length)
+  {
+	stack.Pop();
+	j++;
+	a=true;   
+  }
+else if(i <  length)
+{
+  stack.Push(pushed[i++]);
+  a=true;
+}
+
+if(!a)
+ return a;
+} //while
+
+return !stack.Any();
+
+}
+
+=========
+
+================================== Study Links and URL  ======================================================
+
+azure logic apps vs functions
+Functions and Logic Apps are Azure services that enable serverless workloads. Azure Functions is a serverless compute service, whereas Azure Logic Apps provides serverless workflows
+
+
+https://www.guru99.com/uml-class-diagram.html
+https://www.tutorialspoint.com/Association-Composition-and-Aggregation-in-Chash
+https://www.codeproject.com/Articles/330447/Understanding-Association-Aggregation-and-Composit
+
+https://www.c-sharpcorner.com/article/what-is-azure-functions/
+
+
+Dot Net Core Interview Question Answer
+https://www.dotnettricks.com/learn/aspnetcore/top-20-asp-net-core-interview-questions-and-answers
+
+Good QA for C#
+https://www.codingdojo.com/blog/c-interview-questions
+https://www.fullstack.cafe/blog/c-sharp-interview-questions
+
+
+https://www.c-sharpcorner.com/UploadFile/puranindia/C-Sharp-interview-questions/  : Good Question Answer
+
+https://dotnetcorecentral.com/blog/asp-net-core-streaming-application-using-kafka-part-1/
+https://dotnetcorecentral.com/blog/asp-net-core-streaming-application-using-kafka-part-2/
+
+
+
+-- Design patterns
+Edureka : Microservices Design Patterns | Microservices Architecture Patterns : https://www.youtube.com/watch?v=xuH81XGWeGQ
+
+
+Edureca Azure cloude :
+https://www.youtube.com/watch?v=0bPJPiX89K0&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0
+Edureka Azure Devops Deploying CI/CD Pipeline and others
+https://www.youtube.com/watch?v=Ce08Sp9g_JI&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0&index=33
+
+
+
+
+
+============================================== Code and Concept =====================================
+https://www.c-sharpcorner.com/UploadFile/8a67c0/method-overloading-and-method-overriding-in-C-Sharp/
+Code first EF and Unit test
+https://www.c-sharpcorner.com/article/unit-testing-using-xunit-and-moq-in-asp-net-core/
+
+
+=============================  Code example  ====================================================================
+Clock Angle 1 easy and Has lots of example :https://dotnettutorials.net/lesson/how-to-find-the-angle-between-hour-and-minutehands-of-a-clock-at-any-given-time/
+Clock Angle 2 with Unit Test : https://www.c-sharpcorner.com/article/find-out-the-angle-between-hour-hand-and-minute-hand-in-c-sharp/
+https://www.c-sharpcorner.com/blogs/finding-distinct-elements-in-a-data-structure-using-c-sharp
+https://stackoverflow.com/questions/756055/listing-all-permutations-of-a-string-integer
+
+Code Example : https://ankitsharmablogs.com/csharp-coding-questions-for-technical-interviews/
+
+https://www.interviewsansar.com/c-program-interview-question-for-practice/
+
+
+
+//Constuctor Call :
+https://www.interviewsansar.com/csharp-programs-practice-class-object-constructor/2/
+https://www.interviewsansar.com/csharp-programs-practice-class-object-constructor/
+https://www.interviewsansar.com/csharp-exercises-solutions-abstract-class/
+
+
+============================================== Design pattern code or concept  ============================================
+https://www.codeproject.com/Tips/769084/Observer-Pattern-Csharp
+
+
+
+
+Singletone : https://csharpindepth.com/articles/singleton
+
+https://enlabsoftware.com/development/how-to-implement-repository-unit-of-work-design-patterns-in-dot-net-core-practical-examples-part-one.html
+
+What is the repository design pattern?
+Repositories are classes or components that encapsulate the logic required to access data sources. They centralize common data access functionality, providing better maintainability and decoupling the infrastructure or technology used to access databases from the domain model layer.
+
+
+What is the unit of work pattern?
+The repository and unit of work patterns are intended to create an abstraction layer between the data access layer and the business logic layer of an application. ... The unit of work class coordinates the work of multiple repositories by creating a single database context class shared by all of them.

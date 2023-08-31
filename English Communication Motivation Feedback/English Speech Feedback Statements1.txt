@@ -1,0 +1,77 @@
+========== elude
+Sighting the project criticality I'll re-schedule my leave plan, please let me know the updated deadline so that I can plan accordingly.
+I suggest to keep some buffer so that we can elude such situation.
+
+escape from or avoid (a danger, enemy, or pursuer), typically in a skilful or cunning way.
+"he tried to elude the security men by sneaking through a back door"
+====================
+
+- [Announcer] Over the last few months, GPT and ChatGPT have been popular buzzwords, but things kicked off long before in natural language processing.
+ A type of AI model architecture called Transformers was proposed by a team of researchers from Google in 2017 in a paper called "Attention is All You Need."
+ All large language models use components of Transformers as part of their architecture.
+
+
+============== Happy Client - Live Nation : 
+Great demonstration on the importance of planning, setting realistic expectations, teamwork and collaboration when faced with tight deadlines. I would like to extend my gratitude to each team member for their hard work, support, and collaboration. Team members have never hesitated to seek guidance or support one another, fostering the culture of teamwork and continuous learning even in moments when they felt unsure. DM’s strategic thinking and client communication have been instrumental in streamlining our processes, enabling us to deliver effectively and efficiently. Good job team, keep it up.
+–
+Ramesh Allu
+Tech Lead
+---
+Around 3 months ago, I became a member of LIVN-PPOD. Considering we worked on new technologies; our team quickly learned the ropes and delivered the project on time with great quality. I am grateful to my teammates and leaders, KumarRajeev Ranjan and Ramesh Allu, for their support. It was great being part of this high energy team. There were many challenges we encountered during the project. But Live Nation was easy to reach out to and would help us resolve them quickly. Ultimately project went well, we even received appreciation from them. Many thanks to our client Live Nation.
+–
+Karan Sharma
+Developer
+
+I wanted to take a moment to express my sincere gratitude for the wonderful support provided throughout the project. The encouragement and approachable nature of the client made it a pleasure to work. I am thrilled to have had the opportunity to work with such a fantastic client and team. I am also grateful for the technical growth that I have experienced during this project. Feedback and guidance have been invaluable in helping me to develop my skills as a software engineer. Thank you for being patient and focusing on the goal that mattered most.
+–
+Rahul Sahani
+Junior Developer
+
+I joined the Project LIVN-PPOD three months ago, and I am grateful to my teammates and leaders, KumarRajeev Ranjan and Ramesh Allu, for their invaluable support. One of the things that make our team truly exceptional is our ability to work on tight timelines, willingness to help each other at any time and availability for support and guidance. Initially when we started this project, we had lots of challenges and issues, but we overcame all the challenges with teamwork. I am delighted to witness positive feedback and appreciation from our clients. Although the journey was roughly three months, we made good memories and bonding with team, and I cherish every moment spent in the project.
+–
+Asmiriti Kumari
+Developer
+
+
+It has been an incredible 3+ months since I joined the Project LIVN-PPOD, I learned various things and brushed my core skill in JavaScript as well as other tech stacks like scripting, CSS. I want to thank my team for their unwavering support in helping me understand the project. I am happy to be part of LIVN-PPOD project.
+–
+Tasneem Fathima 
+Junior Developer
+
+=========================== #Shell
+Congratulations & well done team!  Thanks for your hard work and dedication in exceeding client expectation. It is always nice to see client appreciation for our associates, you made all of us proud. This will go long way in improving client relation as well as growing our business with Shell. Keep it up!
+RAVEENDRA KURKIMAT
+SHELL INDIA DELIVERY MANAGER, EPAM
+
+Sandeep,
+
+I wanted to take a moment to express my appreciation for all of your hard work and dedication in making the recent go live for our Enterprise Data Platform (EDP) a success. EDP is a critical component of our organisation’s digital transformation journey, and your hard work has paved the way for the Business to achieve greater operational efficiencies, improved customer experiences, and accelerated growth. Well done to you!
+
+=======#Agile
+software development teams have had to keep pace with the rapid rate of change. Successful teams develop a foundation for Engineering Excellence
+
+--#4 Values and 12 Principles
+Agile Values
+We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
+
+Individuals and interactions over processes and tools.
+Working software over comprehensive documentation.
+Customer collaboration over contract negotiation.
+Responding to change over following a plan.
+
+Implemnet Agile with Scrum=>
+Scrum is a framework that unites business and development. It focuses on teams delivering products of the highest value while also being productive and efficient.
+
+
+Sprint Planning 
+Daily Scrum
+Sprint Review Meeting
+Retrospective meeting-What went well and Improvement plan etc
+Implementation + Review + 
+--product backlog
+
+The EngX Culture : 
+To remain competitive in today’s fast-paced digital world, businesses must be agile, quickly adapting and evolving in response to rapidly shifting market conditions. Maximizing business agility requires striving for Engineering Excellence—the highest software industry standards—and remaining committed to continuous improvement.
+
+
+ 

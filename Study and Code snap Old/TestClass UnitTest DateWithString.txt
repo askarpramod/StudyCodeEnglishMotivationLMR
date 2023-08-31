@@ -1,0 +1,110 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Text;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using UpstreamDigitalDataAcquisition.Writer.Common;
+
+namespace UpstreamDigitalDataAcquisition.Writing.Common.UnitTest
+{
+    [TestClass]
+    public class ParseStringDateWithTextTests
+    {
+        [TestMethod]
+        public void DateHelper_ParseStringDateWithText_Empty_String()
+        {
+            var actualDate = DateHelper.ParseStringDateWithText(null);
+            Debug.Assert(actualDate == null, nameof(actualDate) + " == null");
+        }
+        [TestMethod]
+        [DataRow("29/06/2019 @1525 hrs", "2019-06-29 03:25:00 PM")]
+        [DataRow("25/06/2019 @1525 hrs", "2019-06-25 03:25:00 PM")]
+        [DataRow("29-06-2019 @1525 hrs", "2019-06-29 03:25:00 PM")]
+        [DataRow("29/06/2019", "2019-06-29 00:00:00 AM")]
+        [DataRow("07/06/2019 Arrived: @ 1200 hrs Retrieved: @ 1530 hrs", "2019-06-07 12:00:00 AM")]
+        public void DateHelper_ParseStringDateWithText_Data_Driven(string input,string expected)
+        {
+            var actualDate = DateHelper.ParseStringDateWithText(input);
+            Debug.Assert(actualDate != null, nameof(actualDate) + " != null");
+
+            var actual = actualDate.Value;
+            var yyyyMmDdHhMmSsTt = "yyyy-MM-dd hh:mm:ss tt";
+            Assert.AreEqual(expected,actual.ToString(yyyyMmDdHhMmSsTt));
+            
+        }
+        [TestMethod]
+        public void DateHelper_ParseStringDateWithText_Valid_Date_With_Symbol()
+        {
+            var actualDate = DateHelper.ParseStringDateWithText("29/06/2019 @1525 hrs");
+            Debug.Assert(actualDate != null, nameof(actualDate) + " != null");
+
+            var actual = actualDate.Value;
+            Assert.AreEqual(29, actual.Day);
+            Assert.AreEqual(6, actual.Month);
+            Assert.AreEqual(2019, actual.Year);
+            Assert.AreEqual(15, actual.Hour);
+            Assert.AreEqual(25, actual.Minute);
+            Assert.AreEqual(0, actual.Second);
+        }
+
+        //[TestMethod]
+        //public void DateHelper_ParseStringDateWithText_Valid_Date_With_Symbol_and_Dash()
+        //{
+        //    var actualDate = DateHelper.ParseStringDateWithText("29-06-2019 @1525 hrs");
+        //    Debug.Assert(actualDate != null, nameof(actualDate) + " != null");
+
+        //    var actual = actualDate.Value;
+        //    Assert.AreEqual(29, actual.Day);
+        //    Assert.AreEqual(6, actual.Month);
+        //    Assert.AreEqual(2019, actual.Year);
+        //    Assert.AreEqual(15, actual.Hour);
+        //    Assert.AreEqual(25, actual.Minute);
+        //    Assert.AreEqual(0, actual.Second);
+        //}
+
+        //[testmethod]
+        //public void datehelper_parsestringdatewithtext_valid_date_()
+        //{
+        //    var actualdate = datehelper.parsestringdatewithtext("30/07/2019");
+        //    debug.assert(actualdate != null, nameof(actualdate) + " != null");
+
+        //    var actual = actualdate.value;
+        //    assert.areequal(30, actual.day);
+        //    assert.areequal(7, actual.month);
+        //    assert.areequal(2019, actual.year);
+        //    assert.areequal(0, actual.hour);
+        //    assert.areequal(0, actual.minute);
+        //    assert.areequal(0, actual.second);
+        //}
+
+        [TestMethod]
+        public void DateHelper_ParseStringDateWithText_Valid_Date_With_Symbol_and_Text()
+        {
+            var actualDate = DateHelper.ParseStringDateWithText("07/06/2019 Arrived: @ 1200 hrs Retrieved: @ 1530 hrs");
+            Debug.Assert(actualDate != null, nameof(actualDate) + " != null");
+
+            var actual = actualDate.Value;
+            Assert.AreEqual(7, actual.Day);
+            Assert.AreEqual(6, actual.Month);
+            Assert.AreEqual(2019, actual.Year);
+            Assert.AreEqual(12, actual.Hour);
+            Assert.AreEqual(0, actual.Minute);
+            Assert.AreEqual(0, actual.Second);
+        }
+
+        [TestMethod]
+        public void DateHelper_ParseStringDateWithText_ValidNumber_Check()
+        {
+            var actualDate = DateHelper.ParseStringDateWithText("43493");
+            Debug.Assert(actualDate != null, nameof(actualDate) + " != null");
+
+            var actual = actualDate.Value;
+            Assert.AreEqual(28, actual.Day);
+            Assert.AreEqual(1, actual.Month);
+            Assert.AreEqual(2019, actual.Year);
+            Assert.AreEqual(6, actual.Hour);
+            Assert.AreEqual(0, actual.Minute);
+            Assert.AreEqual(0, actual.Second);
+        }
+    }
+}

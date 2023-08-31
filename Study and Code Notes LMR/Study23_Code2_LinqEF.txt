@@ -1,0 +1,160 @@
+==============================#EF
+https://code-maze.com/queries-in-entity-framework-core/
+
+[HttpGet]
+public IActionResult Get()
+{
+    var students = _context.Students
+      .AsNoTracking() //when read only query then use AsNoTracking method to speed up the execution.
+      .Where(s => s.Age > 25)
+      .ToList();
+            
+     return Ok(students);
+ }
+
+==============================#
+https://www.adaface.com/blog/linq-interview-questions/
+
+==============================#
+https://www.adaface.com/blog/linq-interview-questions/
+List<Person> people = new List<Person>
+{
+    new Person { Id = 1, Name = "Alice", Age = 25 },
+    new Person { Id = 2, Name = "Bob", Age = 30 },
+    new Person { Id = 3, Name = "Charlie", Age = 20 }
+};
+
+List<Address> addresses = new List<Address>
+{
+    new Address { PersonId = 1, Street = "123 Main St", City = "Anytown", State = "CA" },
+    new Address { PersonId = 2, Street = "456 Oak Ave", City = "Otherville", State = "NY" },
+    new Address { PersonId = 3, Street = "789 Elm St", City = "Sometown", State = "FL" }
+};
+
+IEnumerable<PersonAddress> personAddresses =
+    from person in people
+    join address in addresses on person.Id equals address.PersonId
+    select new PersonAddress
+    {
+        Person = person,
+        Address = address
+    };
+---
+foreach (PersonAddressList<Person> people = new List<Person>
+{
+    new Person { Id = 1, Name = "Alice", Age = 25 },
+    new Person { Id = 2, Name = "Bob", Age = 30 },
+    new Person { Id = 3, Name = "Charlie", Age = 20 }
+};
+
+List<Address> addresses = new List<Address>
+{
+    new Address { PersonId = 1, Street = "123 Main St", City = "Anytown", State = "CA" },
+    new Address { PersonId = 2, Street = "456 Oak Ave", City = "Otherville", State = "NY" },
+    new Address { PersonId = 3, Street = "789 Elm St", City = "Sometown", State = "FL" }
+};
+
+IEnumerable<PersonAddress> personAddresses =
+    from person in people
+    join address in addresses on person.Id equals address.PersonId
+    select new PersonAddress
+    {
+        Person = person,
+        Address = address
+    };
+
+foreach (PersonAddress personAddress in personAddresses) personAddress in personAddresses)
+-----
+
+
+
+==============================#How can you use LINQ to perform a Group Join operation and what are some use cases for this?
+var query = from category in categories
+            join product in products on category.Id equals product.CategoryId into productsByCategory
+            select new { CategoryName = category.Name, Products = productsByCategory };
+
+==============================#What is the purpose of the IQueryable interface in LINQ and when would you use it?
+The IQueryable interface in LINQ allows for deferred execution of queries against a data source, such as a database, which can result in improved performance over using IEnumerable for large datasets. The purpose of IQueryable is to allow LINQ queries to be translated into a form that can be executed directly by the data source, rather than first loading all the data into memory and then performing the query. This can reduce the amount of data that needs to be transferred over the network and can lead to more efficient use of server resources. IQueryable is typically used in scenarios where the data source is remote, such as when querying a database. Here's an example:
+
+using (var context = new MyDataContext())
+{
+    IQueryable<Customer> query = from c in context.Customers
+                                 where c.Orders.Count() > 0
+                                 select c;
+
+    var results = query.ToList();
+}
+
+In this example, the LINQ query is translated into SQL and executed directly against the database, returning only the matching records, rather than retrieving all the records and performing the filtering in memory.
+
+
+==============================#
+
+
+==============================#
+
+
+==============================#
+
+
+==============================#OrderBy #OrderByDescending #Walk me through how you would use LINQ to sort a collection of objects by a specific property.
+
+To sort a collection of objects by a specific property using LINQ, you can use the OrderBy or OrderByDescending methods.
+
+Here's an example of how to sort a list of Person objects by their age in ascending order using OrderBy method:
+
+List<Person> people = new List<Person>
+{
+    new Person { Name = "Alice", Age = 25 },
+    new Person { Name = "Bob", Age = 30 },
+    new Person { Name = "Charlie", Age = 20 }
+};
+
+IEnumerable<Person> sortedPeople = people.OrderBy(p => p.Age);
+
+foreach (Person person in sortedPeople)
+{
+    Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+}
+
+=============================#Where #Filter #Explain how you would use LINQ to filter a list of objects based on a specific condition.
+IEnumerable<Person> filteredPeople = people.Where(p => p.Age > 25);
+
+foreach (Person person in filteredPeople)
+--
+IEnumerable<Person> filteredAndSortedPeople = people
+    .Where(p => p.Age > 25)
+    .OrderBy(p => p.Age);
+==============================#
+
+
+==============================#
+
+
+==============================#
+
+
+==============================#
+
+
+==============================#
+
+
+==============================#
+
+==============================#
+
+
+==============================#
+
+
+==============================#
+
+
+==============================#
+
+
+==============================#
+
+
+==============================#

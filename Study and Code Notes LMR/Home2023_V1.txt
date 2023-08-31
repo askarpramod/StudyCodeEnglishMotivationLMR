@@ -1,0 +1,58 @@
+//Epam 
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+      {
+            int someInt;
+            SomeMethod2(out someInt);
+            Console.WriteLine(someInt); //2
+
+            SomeMethod1(ref someInt);
+            Console.WriteLine(someInt); //1
+
+            SomeMethod(someInt);
+            Console.WriteLine(someInt); //1
+
+            Console.ReadLine();
+        }
+
+       static void SomeMethod2(out int value)
+        {
+            value = 2;
+        }
+
+        static void SomeMethod1(ref int value)
+        {
+            value = 1;
+        }
+        
+        static void SomeMethod(int value)
+        {
+            value = 0;
+        }
+       
+}
+
+9. Explain the boxing and unboxing concept in .Net?
+
+Ans:
+
+Boxing: Boxing is a process of converting value type into reference type.
+Unboxing: Unboxing is a process of converting reference type to value type.
+
+20. Is it possible to change the index of the primary key on the table? NO
+
+--26. What is the difference between dispose() and finalize()?
+
+Ans:
+Dispose - Developer calls 
+Finalize - CLR calls automatically 
+Although Dispose and Finalize both methods are used by CLR to perform garbage collection of runtime objects of .NET applications but there is a difference between them.
+
+The Finalize method is called automatically by the runtime while the Dispose method is called by the programmer.
+
+Switch-Case : 
+multiple If-Else statements. In C#, we should use Switch-Case statements to replace multiple If-Else statements.

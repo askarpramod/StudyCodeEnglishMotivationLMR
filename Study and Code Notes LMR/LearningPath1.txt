@@ -1,0 +1,202 @@
+=============# TSYS
+MVC Temp data
+
+Table A
+ID
+1
+1
+1
+
+Table B
+ID
+1
+1
+Null
+
+======================
+Employee {Id, Name, Salary}
+List<Employees> employees;
+
+ 
+
+Linq expression to know if any employee have salary > 100000
+employees.Any(x=>x.salary > 100000 );
+
+
+Employee (EID , EName)
+Projects (PID, PName)
+EmployeeProject(EID, PID)
+
+ 
+
+SQL query to get Employee on bench ?
+
+has context menu
+
+
+==========  #Login #Authentication #code-maze ==========================
+https://code-maze.com/angular-authentication-aspnet-identity/  seems to be good article
+
+https://code-maze.com/authentication-aspnetcore-jwt-1/
+https://code-maze.com/authentication-aspnetcore-jwt-2/
+https://code-maze.com/using-refresh-tokens-in-asp-net-core-authentication/
+==============#
+
+Kestrel is a cross-platform web server for ASP.NET Core. It is supported on all platforms and versions that .NET Core supports.
+
+==========
+Deep understanding of design principles, threading, real-time
+processing, and SQL Server DB queries and performance tuning
+Experience debugging and performance tuning applications and
+services
+ Desire and skill in coaching more junior engineers
+Excellent wr
+============#ConstructorOverloading
+https://www.geeksforgeeks.org/c-sharp-constructor-overloading/
+
+By using different type of arguments
+By using different number of arguments
+By using different order of arguments
+
+
+============#Extensions #odd #even 
+public static class Extensions
+    {       
+        public static bool IsEven(this int input)
+        {
+            return input % 2 == 0 ? true : false;
+        }      
+        public static bool IsOdd(this int input)
+        {
+            return input % 2 == 0 ? false : true;
+        }
+	}
+
+========================##For Wolter 
+Must have skills: C#.Net,MVC,EF,SQL, Angular,Azure,Design Pattern,Microservices, Oops, Javascript,JQuery
+What is JavaScript Hoisting?
+What is JavaScript Closure?
+https://www.nickmccullum.com/javascript/understanding-javascript-hoisting-closures/#:~:text=Specifically%2C%20we%20discussed%20how%20hoisting,outside%20of%20that%20specific%20function.
+
+JavaScript hoisting is a concept that allows you to refer to JavaScript functions and variables before they have been created.
+During this compilation step, JavaScript moves all function and variable declarations to the start of the script. This causes hoisting!
+Hoisting also works for variables. However, it only hoists the variable declarations, not the values assigned to the variable.
+
+What is a closure in JavaScript?
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.
+They allow you to attach variables to an execution context. Variables in closures can help you maintain a state that you can use later. They provide data encapsulation. They help remove redundant code
+
+-- JS Variables 
+https://www.w3schools.com/js/js_function_closures.asp
+
+JavaScript variables can belong to the local or global scope.
+Global variables can be made local (private) with closures.
+
+Note
+Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
+Variable Lifetime
+Global variables live until the page is discarded, like when you navigate to another page or close the window.
+Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.
+
+A closure is a function having access to the parent scope, even after the parent function has closed.
+
+#JavaScript #Callbacks : https://www.w3schools.com/js/js_callback.asp
+When you pass a function as an argument, remember not to use parenthesis.
+===
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+==
+
+Right: myCalculator(5, 5, myDisplayer);
+Wrong: myCalculator(5, 5, myDisplayer());	
+	
+=============================##performance-optimization #optimization #tuning
+https://medium.com/agoda-engineering/happy-asp-net-core-performance-optimization-4e21a383d299
+
+Public async Task<IEnumerable<people>> GetPeopleByIDs(IEnumerable<int> peopleIds)
+{
+    foreach(var id in peopleIds)
+	{
+	 var res = _someDBRepo.GetPeopleByIDs(id)
+	 people.Add(res);
+	}
+	
+	return people;
+	
+}
+
+using(var HttpClnt = new HttpClient)
+{
+
+}
+
+
+var client = _httpClientFactory.CreateClient();
+var result = await client.GetstringAsync("https://www.jfjhjd/Getstr");
+
+------ #AddTransient
+https://www.c-sharpcorner.com/article/understanding-addtransient-vs-addscoped-vs-addsingleton-in-asp-net-core/
+The below three methods define the lifetime of the services,
+AddTransient
+Transient lifetime services are created each time they are requested. This lifetime works best for lightweight, stateless services.
+
+AddScoped
+Scoped lifetime services are created once per request. http 
+
+AddSingleton
+Singleton lifetime services are created the first time they are requested (or when ConfigureServices is run if you specify an instance there) and then every subsequent request will use the same instance.
+
+=============================##OOP
+Explicit Interface -  aware
+What is Boxing and Unboxing
+ can we convert value type into object type --  
+ var vs dynamic - 
+ const and readonly - 
+ String vs string builder - correct 
+private constructor :- explained
+sealed class : explained
+abstract and virtual : 
+Explicit interfaces : scenrio based : 
+constructor inside abstract : answered
+Prtotected and internal protected :
+Normal class into abstract class : 
+Dispose and finally : 
+Association and Agreegation - not aware
+override and new - confused but was aware of
+Polymorphism- explained
+ Defautt access modifire  for class -internal
+[GK]
+Using - 
+
+https://code-maze.com/queries-in-entity-framework-core/
+
+==============
+https://www.c-sharpcorner.com/UploadFile/mkagrahari/introduction-to-object-oriented-programming-concepts-in-C-Sharp/
+
+abstract class MobilePhone {
+    public void Calling();
+    public void SendSMS();
+}
+public class Nokia1400: MobilePhone {}
+public class Nokia2700: MobilePhone {
+    public void FMRadio();
+    public void MP3();
+    public void Camera();
+}
+public class BlackBerry: MobilePhone {
+    public void FMRadio();
+    public void MP3();
+    public void Camera();
+    public void Recording();
+    public void ReadAndSendEmails();
+}
+
+

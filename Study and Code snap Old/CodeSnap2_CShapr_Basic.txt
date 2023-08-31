@@ -1,0 +1,719 @@
+==================
+
+=================================== C# Basic ===================================
+
+====================================== #Angular ===============
+angular maximilian Angular
+Angular : mosh hamedani
+
+================= #JavaScript #CallBackFunction =================
+https://www.w3schools.com/js/js_callback.asp
+
+JS Async =>
+JS Callbacks
+JS Asynchronous
+JS Promises
+JS Async/Await
+
+================================= #Generic#Class =================================
+GenericTypeName<T> where T  : contraint1, constraint2
+//class constraint, which means only a reference type can be passed as an argument while creating the DataStore class object
+class DataStore<T> where T : class 
+{
+    public T Data { get; set; }
+}
+DataStore<string> store = new DataStore<string>(); // valid
+DataStore<MyClass> store = new DataStore<MyClass>(); // valid
+DataStore<IMyInterface> store = new DataStore<IMyInterface>(); // valid
+DataStore<IEnumerable> store = new DataStore<IMyInterface>(); // valid
+DataStore<ArrayList> store = new DataStore<ArrayList>(); // valid
+//DataStore<int> store = new DataStore<int>(); // compile-time error 
+--------
+
+class DataStore<T> where T : IEnumerable
+{
+    public T Data { get; set; }
+}
+
+DataStore<ArrayList> store = new DataStore<ArrayList>(); // valid
+DataStore<List> store = new DataStore<List>(); // valid
+//DataStore<string> store = new DataStore<string>(); // compile-time error 
+
+
+=================================== #IDisposable #Using ===================================
+https://www.c-sharpcorner.com/UploadFile/b08196/idisposable-interface-in-C-Sharp/#:~:text=IDisposable%20is%20an%20interface%20that,database%20connections%20and%20so%20on.
+
+https://www.ssw.com.au/rules/when-to-implement-idisposable
+
+https://www.c-sharpcorner.com/article/the-using-statement-in-C-Sharp/
+https://www.c-sharpcorner.com/UploadFile/manas1/usage-and-importance-of-using-in-C-Sharp472/
+
+=================================== #Angular #LifeCycle #Hooks  # ===================================
+https://www.pluralsight.com/guides/using-lifecycle-hooks
+
+
+https://www.syncfusion.com/blogs/post/angular-promises-versus-observables.aspx
+
+=================================== #  # ===================================
+
+=================================== #  # ===================================
+
+Func Action Predicate Deligate  
+https://www.c-sharpcorner.com/UploadFile/b1df45/var-vs-dynamic-keywords-in-C-Sharp/
+
+====================== #var #dynamic object ===================================
+var is a statically typed variable. It results in a strongly typed variable, in other words the data type of these variables are inferred at compile time. This is 
+ based on the type of value that these variables are initialized with.
+dynamic are dynamically typed variables. This means, their type is inferred at run-time and not the compile time in contrast to var type.
+
+var type of variables are required to be initialized at the time of declaration
+dynamic type variables need not be initialized when declared.
+
+
+var does not allow the type of value assigned to be changed after it is assigned to.
+
+Object type : even string assigned we dont get intellisense for string method.., we need to explisitly convert like Convert.ToString()
+Type case is needed 
+
+
+
+======================= #SingleOrDefault #FirstOrDefault ====================================
+SingleOrDefault throws an exception
+FirstOrDefault returns the first record
+Conclusion:
+
+If you want an exception to be thrown if the result set contains many records, use SingleOrDefault.
+
+If you always want 1 record no matter what the result set contains, use FirstOrDefault
+
+https://www.pluralsight.com/guides/csharp-in-out-ref-parameters
+ref out in
+Both the ref and in require the parameter to have been initialized before being passed to a method. The out modifier does not require this and is typically not initialized prior to being used in a method.
+
+In restrict new inistialization of object in method 
+static void Enroll(in Student student)
+  {
+    // With in assigning a new object would throw an error
+    // student = new Student();
+
+
+
+It's important to note that in, out, and ref cannot be used in methods with the async modifier. You can use them in synchronous methods that return a task, though.
+
+You cannot use them in iterator methods that have a yield return or yield break either.
+Using the out modifier, we initialize a variable inside the method. Like ref, anything that happens in the method alters the variable outside the method. With ref,
+
+
+is as
+using 
+
+web api - put post
+authorization 
+content type negatiation + 
+
+factory singltone facade 
+dependency solid
+cte
+
+fun proc 
+performance tuning 
+
+
+
+
+========================================= #Webpack #Gulp======================================================
+Webpack is a tool that lets you compile JavaScript modules, also known as module bundler. Given a large number of files, it generates a single file (or a few files) that run your app. It can perform many operations: helps you bundle your resources.
+
+Should I Use Webpack? If you're building a complex Front End application with many non-code static assets such as CSS, images, fonts, etc, then yes, Webpack will give you great benefits
+
+Webpack is a bundler whereas Gulp is a task runner, so you'd expect to see these two tools commonly used together. ... Simply put, Webpack is such a powerful tool that it can already perform the vast majority of the tasks you'd otherwise do through a task runner.
+
+================================= #Responsive Web Site #HTML5 #CSS3 ==============================================================
+HTML5 and CSS3 are both evolving versions and they have been successfully moulding the things just the way we want them to be. we shall read about how CSS3 and HTML5 are different from their previous versions and what features are most useful in web application development.
+
+HTML5:
+
+New Doctype: HTML5 has a new doctype function where you only need to write and you are ready to go. There is no struggle of memorizing complicated and difficult codes. The declaration is very simple in this version and it allows browsers to render page in the standard mode.
+Media Support: HTML5 brings you an outstanding audio and video support. You can easily add audio and video files to make your website look lively and engaging.
+Flawless content editing: The current HTML version has an attribute called contenteditable that helps you edit content quickly and easily. This can help in taking advantage of local storage and various other uses.
+Article and Section: The HTML5 is provided with two semantic tags <article> and <section> to help you increase your search engine visibility. This will facilitate users to compose an article into multiple sections and integrate multiple articles into a single section.
+The Figure element: The previous versions of HTML lack the ability to provide any caption for the image. The previous HTML versions did not provide any way to associate the caption to make it more informative and comprehensive. However, in HTML5 there is new figure element which can be combined with element in order to easily associate caption with the other elements of an image.
+CSS3:
+
+Box Shadows: This is a new feature that allows a content slide beneath are such as footer and it gives an appearance as if it is coming out or sinking into the website. This process is pretty simple and there is no need for the developer to create a new image using JavaScript plugin.
+Border Images: CSS3 has introduced a new feature that is border images. This feature allows you to exchange a border with an image. It helps you specify an image in place of a plain solid coloured border.
+CSS3 selectors: CSS selectors are more updated and improved in CSS3 version. With these selectors, DOM elements can be chosen on the bases of their attributes easily. There is no need to specify classes and ID’s for each and every element. You can use the field elements to perform styling functions.
+Font Additions: Adding fonts is easy in CSS3 and all you need to do is just upload the file to your server, link to the CSS file and add fonts as per your choice.
+Opacity levels: In previous versions, designers had to create a new image or make use of CSS filters. But in CSS3, you simply have to provide an input that will get the desirable effects.
+CSS3 and HTML5 are now more improved and this can help designers will have more possible ways to provide sophisticated projects. They are technologically advanced and thus we can get the best out of them for web application development.
+
+HTML Responsive Web Design
+Setting The Viewport. To create a responsive website, add the following <meta> tag to all your web pages: ...
+Responsive Images. Responsive images are images that scale nicely to fit any browser size. ...
+Responsive Text Size. ...
+Media Queries. ...
+Responsive Web Page - Full Example. ...
+Responsive Web Design - Frameworks. ...
+Bootstrap.
+
+What is Responsive Web Design?
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):
+
+https://www.w3schools.com/html/html_responsive.asp
+
+1 Setting The Viewport
+To create a responsive website, add the following <meta> tag to all your web pages:
+
+Example
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+2 Responsive Images
+Responsive images are images that scale nicely to fit any browser size.
+
+3 Using the width Property
+If the CSS width property is set to 100%, the image will be responsive and scale up and down:
+
+Example
+<img src="img_girl.jpg" style="width:100%;">
+
+Problem with the width property 
+Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.
+
+Using the max-width Property
+If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+4 Show Different Images Depending on Browser Width
+The HTML <picture> element allows you to define different images for different browser window sizes.
+
+Resize the browser window to see how the image below change depending on the width:
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+
+5 Responsive Text Size
+The text size can be set with a "vw" unit, which means the "viewport width".
+
+That way the text size will follow the size of the browser window:
+<h1 style="font-size:10vw">Hello World</h1>
+Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+
+6 Media Queries
+In addition to resize text and images, it is also common to use media queries in responsive web pages.
+
+With media queries you can define completely different styles for different browser sizes.
+
+Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens:
+
+<style>
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+
+ 6.1 
+
+#Bootstrap : https://www.w3schools.com/bootstrap/bootstrap_pagination.asp
+Another popular CSS framework is Bootstrap. Bootstrap uses HTML, CSS and jQuery to make responsive web pages.
+=================================== #MSTEst #MOQ============================================================
+http://www.advancesharp.com/blog/1238/test-driven-development-tdd-through-mocking-using-moq-framework
+
+public interface IDBContext
+{
+    Order GetNextOrderDetailFromDB(int orderID);
+
+    void SaveOrder(Order nextOrder);
+}
+
+public class OrderProcessingWithMoq
+{
+    public Order ProcessGSTForNextOrder(IDBContext dbContext, int orderId)
+    {
+        var nextOrder = dbContext.GetNextOrderDetailFromDB(orderId);
+
+        nextOrder.Amount = CalculateTotalAmountWithGST(nextOrder);
+
+        dbContext.SaveOrder(nextOrder);
+
+        return nextOrder;
+    }
+
+    public decimal CalculateTotalAmountWithGST(Order order)
+    {
+        return order.Amount + (order.Amount * 10 / 100);
+    }
+}
+
+[TestMethod]
+public void TestOrderProcessing()
+{
+        int orderId = 1234;
+
+        Mock<IDBContext> mockDBContext = new Mock<IDBContext>();
+
+        mockDBContext.Setup(t => t.GetNextOrderDetailFromDB(It.IsAny<int>())).Returns(new Order() { OrderId = orderId, Amount = 1000 });
+        mockDBContext.Setup(t => t.SaveOrder(It.IsAny<Order>()));
+
+        OrderProcessingWithMoq orderProcessing = new OrderProcessingWithMoq();
+        var modifiedOrder = orderProcessing.ProcessGSTForNextOrder(mockDBContext.Object, orderId);
+
+        Assert.IsTrue(modifiedOrder.Amount == 1100);
+ }
+=================================== #Atidiv ============================================================
+https://www.codingame.com/playgrounds/35462/creating-web-api-in-asp-net-core-2-0/part-1---web-api-in-asp-net-core-2-0/part-1---web-api
+
+https://www.c-sharpcorner.com/article/convention-routing-vs-attribute-routing/
+
+
+EntityFrameworkCore.SqlServer
+Swashbuckle.AspNetCore
+
+Installing NuGet package Swashbuckle.Core 5.6.0.
+
+1) We need a service that can record billable transactions to an arbitrary data source (text file,
+database, etc.) each transaction should include a date, transaction amount, transaction
+description, and payment status. This service should allow you to update the billing status as
+well (e.g. un-billed, billed, paid).
+2) There should be a service that generates invoices based on date ranges. The transactions being
+billed for should be marked billed when the invoice is generated. There should also me a
+mechanism to record transactions as paid, if payments are received for an invoice.
+
+TransactionController
+
+TxnNo
+TxnDate 
+Amount
+TxnDescription
+TxnPaymentStatus : Paid UnPaid
+TxnBillingStatus - un-billed / Billed
+
+TxnNo
+InvoiceNo
+InvoiceAmount
+
+======================== #Generic #genericMethod =========================
+
+public string SerializeToJson<T>(T jsonObj)
+        {
+            return JsonConvert.SerializeObject(jsonObj);
+        }
+        public string SerializeToJson<T>(T jsonObj,Formatting jsonFormatting,JsonSerializerSettings jsonSerializerSetting)
+        {
+            return JsonConvert.SerializeObject(jsonObj,jsonFormatting, jsonSerializerSetting);
+        }
+        public T DeserializeJson<T>(string jsonString)
+        {
+            return JsonConvert.DeserializeObject<T>(jsonString);
+        }
+
+
+
+===============================================================================================
+
+
+AddSingleton()
+AddSingleton() creates a single instance of the service when it is first requested and reuses that same instance in all the places where that service is needed.
+
+AddScoped()
+In a scoped service, with every HTTP request, we get a new instance. However, within the same HTTP request, if the service is required in multiple places, like in the view and in the controller, then the same instance is provided for the entire scope of that HTTP request. But every new HTTP request will get a new instance of the service.
+
+AddTransient()
+With a transient service, a new instance is provided every time a service instance is requested whether it is in the scope of the same HTTP request or across different HTTP requests.
+================================= #AuthorizationFilter==============================================================
+
+namespace ILX.API.Filters
+{
+    public class IlxAuthorizeFilter : IAuthorizationFilter
+    {
+        public IlxAuthorizeFilter()
+        {
+
+        }
+
+        public void OnAuthorization(AuthorizationFilterContext context)
+        {
+            bool skipAuthorization = context.ActionDescriptor.FilterDescriptors.Any(x=>x.Filter.GetType() == typeof(AllowAnonymousFilter));
+            if (skipAuthorization) return;
+
+            if (context.HttpContext.User != null && context.HttpContext.User.Identity != null && !string.IsNullOrWhiteSpace(context.HttpContext.User.Identity.Name)) {
+
+                var controllerActionDescriptor = context.ActionDescriptor as ControllerActionDescriptor;
+
+                string[] controllersToIgnore = new string[] { "xdlcommon" };
+
+                if (!controllersToIgnore.Contains(controllerActionDescriptor.ControllerName.ToLower()))
+                {
+                    var sessionContainer = context.HttpContext.RequestServices.GetService<ISession>();
+                    var userSession = sessionContainer.GetUserSession(context.HttpContext.User.Identity.Name);
+                    if (userSession == null)
+                        context.Result = new UnauthorizedResult();
+                    else
+                    {
+                        var dbSessionHolder = context.HttpContext.RequestServices.GetService<IDbSessionHolder>();
+                        dbSessionHolder.SetDbSession(context.HttpContext.User.Identity.Name);
+                    }
+                }
+            }
+            else
+                context.Result = new UnauthorizedResult();
+        }
+    }
+}
+
+================================ #SupportBothJSONXml #MediaType #Json #XML #ContentNegotiation ===============================================================
+https://stackoverflow.com/questions/48729942/support-both-json-and-xml-as-return-type-in-web-api-2/48730078
+
+config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+
+GlobalConfiguration.Configuration.Formatters.Clear();
+GlobalConfiguration.Configuration.Formatters.Add(new JsonMediaTypeFormatter());
+GlobalConfiguration.Configuration.Formatters.Add(new XmlMediaTypeFormatter());
+
+Serialize class result
+Deserialize class result.
+Write it to xml.
+
+    var json = JsonConvert.SerializeObject(result);
+    var rO = JsonConvert.DeserializeObject<TClass>(json);
+    return Ok(ReturnAsXml(rO), Configuration.Formatters.XmlFormatter);
+
+    protected virtual XElement ReturnAsXml<T>(T data)
+    {
+
+        Type t = data.GetType();
+        DataContractSerializer serializer = new DataContractSerializer(t);//, extraTypes);
+        StringWriter sw = new StringWriter();
+        XmlTextWriter xw = new XmlTextWriter(sw);
+        serializer.WriteObject(xw, data);
+        var o = XElement.Parse(sw.ToString());
+        return o;
+    }
+==================================== #WebAPI #ActionResult #StatusCode ===========================================================
+https://exceptionnotfound.net/asp-net-core-demystified-action-results/ good link 
+ 
+ public IActionResult OkResult()
+{
+    return Ok();  //200
+}
+
+public IActionResult CreatedResult()
+{
+    return Created("http://example.org/myitem", new { name = "testitem" });  //201
+}
+
+public IActionResult NoContentResult()
+{
+    return NoContent();  //204
+}
+
+public IActionResult BadRequestResult()  //400
+{
+    return BadRequest();
+}
+
+public IActionResult UnauthorizedResult() //401
+{
+    return Unauthorized();
+}
+
+public IActionResult NotFoundResult()
+{
+    return NotFound();  //404
+}
+
+public IActionResult UnsupportedMediaTypeResult()
+{
+    return new UnsupportedMediaTypeResult(); //415
+}
+
+----
+public IActionResult RedirectResult()
+{
+    return Redirect("https://www.exceptionnotfound.net");
+}
+
+//Redirect To  Same Application : edirects to a URL within the same application
+public IActionResult LocalRedirectResult()
+{
+    return LocalRedirect("/redirects/target");
+}
+
+public IActionResult RedirectToActionResult()
+{
+    return RedirectToAction("target");
+}
+//RedirectToRouteResult
+app.UseMvc(routes =>
+{
+    routes.MapRoute(
+        name: "default",
+        template: "{controller=Home}/{action=Index}/{id?}");
+});
+public IActionResult RedirectToRouteResult()
+{
+    return RedirectToRoute("default", new { action = "target", controller = "redirects" });
+}
+
+//File Result 
+public IActionResult FileResult()
+{
+    return File("~/downloads/pdf-sample.pdf", "application/pdf");
+}
+//File Content Result 
+public IActionResult FileContentResult()
+{
+    //Get the byte array for the document
+    var pdfBytes = System.IO.File.ReadAllBytes("wwwroot/downloads/pdf-sample.pdf");
+
+    //FileContentResult needs a byte array and returns a file with the specified content type.
+    return new FileContentResult(pdfBytes, "application/pdf");
+}
+
+
+===============================================================================================
+Simran 
+certificate 204 : 19th ...
+
+=====================================#Linq ==========================================================
+https://blog.elmah.io/new-linq-extensions-in-net-6-and-benchmarks/ good Linq article
+
+Join 3 Table : 
+var obj = from trns in context.tblPartyRegistrations
+          join st in context.tblSellingTrans
+          on trns.PartyRegId equals st.Fk_PartyRegId
+          join pt in context.tblPartyRemainings
+          on trns.PartyRegId equals pt.fk_PartyId
+          select new
+          {
+              trns.Name,
+              trns.PhoneNo,
+              trns.Address,
+              st.RecivedAmount,
+              st.Date,
+              st.CustomerType,
+              st.MilkRate,
+              st.Mltr,
+              st.Mkg,
+              st.NtAmnt,
+              st.RemaningAmount,
+              pt.Remainingammount
+          };
+
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================
+
+===============================================================================================
+
+
+===============================================================================================
+
+
+===============================================================================================
+
+===============================================================================================

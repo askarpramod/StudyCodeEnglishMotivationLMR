@@ -1,0 +1,4 @@
+Javascript Angular UI
+https://www.simplilearn.com/tutorials/javascript-tutorial/javascript-hello-world
+https://www.simplilearn.com/tutorials/javascript-tutorial/javascript-arrays
+https://www.simplilearn.com/tutorials/javascript-tutorial/javascript-promise

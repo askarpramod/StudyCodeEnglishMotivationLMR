@@ -1,0 +1,800 @@
+https://www.crazyforcode.com/top-10-logic-puzzles/
+=========== Advance .Net Concept| Design Patterns |
+https://dotnetcorecentral.com/blog/performance-issue-ienumerable/
+
+=linq deferred vs immediate execution
+https://www.dotnetcurry.com/linq/750/deferred-vs-immediate-query-execution-linq
+
+ To force immediate execution of a query that does not produce a singleton value, you can call the ToList(), ToDictionary() or the ToArray() method on a query or query variable. These are called conversion operators which allow you to make a copy/snapshot of the result and access is as many times you want, without the need to re-execute the query.
+ 
+Deferred - IEnumerable -> when starts loop through data : 
+    (from e in empLst 
+	    where e.age > 28 
+		select new {e.name} )
+Immediate -   (from e in empLst where e.age > 28 select e).count();
+
+var list = new List<int> { 1, 2, 3, 4, 5 };
+var query = list.Where(item => item < 3); // not executed yet
+It’s not too difficult to implement such an extension method ourselves:
+
+public static IEnumerable<T> Where<T>(this IEnumerable<T> list, Func<T, bool> predicate)
+{
+    foreach (var item in list)
+    {
+        if (predicate(item))
+        {
+            yield return item;
+        }
+    }
+}
+---- #tuple
+
+New in C# 12 : 
+
+============
+https://kumar-allamraju.medium.com/deploying-net-core-apps-in-azure-kubernetes-aks-1aa9e15c3055
+
+
+Design patterns, advanced .net concepts and web development, WebApi,·
+Ability to see the bigger picture, Product Architecture·
+Extensive knowledge of Web technologies like Angular, HTML5, Javascript, Typescript, and SPA.·
+Hands-on experience in .Net Stack and other frameworks· Good knowledge about cross-browser compatibility and web standards, FHIR, HL7.·
+Good knowledge of MSSQL, Entity framework·
+Good knowledge of TDD·
+Good knowledge of SOA, IOC, REST API, Microservices, and Event-driven architecture
+
+Strong knowledge of ASP.NET MVC, .Net Core, C#, WCF/REST API, Entity Framework and SQL Server.
+Strong .Netcore experience ?Hands-on experience in current projects is important
+Should be very strong in C# and .Net fundamentals
+Hands on experience in implementing Software Design Patterns and Enterprise level Design patterns [ e.g. Pub-Sub, Scatter Gather, CQRS and event sourcing]
+Experience of working with RestAPI and Microservices based Architecture
+Experience on using Unit Testing Frameworks like XUnit. NUnit, NMoq
+Added Advantage
+Very strong fundamentals on .Net Framework 3.x and above, as well as C# including but not limited to understanding Generics, Delegates, Anonymous Methods, Extension Methods, Lambda Expressions, LINQ, Asynchronous operations
+Strong understanding and knowledge on Lambda Function, S3, CloudFormation, RDS, Code Build, Code Pipeline, IAM, Cloud Watch, Dynamo, API Gateway, SNS, SQS  
+Experience in AWS Appsync, GraphQL
+Strong experience in AWS services like AWS Lambda, Cognito, DynamoDB, SQS, SNS
+========================  Venkat Dot NEt core + some other   =======================================
+Middleware Pipeline : Configure ASP NET Core request processing pipeline :  https://www.youtube.com/watch?v=nt6anXAwfYI
+Links for the lazy from 5:37:
+Part 36 - Delgates In C# - https://www.youtube.com/watch?v=D2h46fvQX04
+37 : Deligate usage : https://www.youtube.com/watch?v=vBOzvNO8lvk
+Part 99 - Lambda Expressions -https://www.youtube.com/watch?v=LDgQ-spnrYY
+
+Venket Dot Net Core List : https://www.youtube.com/watch?v=4IgC2Q5-yDE&list=PL6n9fhu94yhVkdrusLaQsfERmL_Jh4XmU
+TExt and slide for above Dot net core : https://csharp-video-tutorials.blogspot.com/2019/01/aspnet-core-tutorial-for-beginners.html
+
+Venkat Azure List: https://www.youtube.com/watch?v=-5NzEDnYMck&list=PL6n9fhu94yhVIhqTz-LBfwgz_Amz7rRLp
+Slide for the Azure beginer video list
+https://www.pragimtech.com/blog/azure/azure-resource-groups/
+
+Cloud computing complete tutorial
+https://www.youtube.com/watch?v=Wn-1OLgxHjQ
+
+
+Solid Design Principles : https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
+                          https://www.youtube.com/watch?v=gnKx1RW_2Rk  Venkat LSP
+ https://www.youtube.com/watch?v=5WHKNOTqwsA : Dependecy Inversion Principle KudVenkat
+ https://www.youtube.com/watch?v=wo06oCBuYYI : Open Close Kud Venkat
+
+=======================   Azure Top Q   ======================================================
+https://www.dotnettricks.com/learn/devops/top-20-azure-devops-interview-questions-answers
+
+https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet/#exercise-2-examine-the--cicd-pipelines-configured-by-azure-devops-project  Good Article
+
+
+
+================================  Docker =====================================================================
+https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/run-docker
+https://dotnet.microsoft.com/learn/aspnet/deploy-microservice-tutorial/docker-hub
+  https://dotnet.microsoft.com/learn/aspnet/deploy-microservice-tutorial/azure-tools
+
+=================================== #Deligate #MultiCastDeligate #Func #Action #Predicate ======================
+https://www.tutorialsteacher.com/csharp/csharp-delegates
+
+public delegate void MyDelegate(string msg); //declaring a delegate
+class Program
+{
+================================== Study Links and URL  ======================================================
+
+azure logic apps vs functions
+Functions and Logic Apps are Azure services that enable serverless workloads. Azure Functions is a serverless compute service, whereas Azure Logic Apps provides serverless workflows
+
+
+https://www.guru99.com/uml-class-diagram.html
+https://www.tutorialspoint.com/Association-Composition-and-Aggregation-in-Chash
+https://www.codeproject.com/Articles/330447/Understanding-Association-Aggregation-and-Composit
+
+https://www.c-sharpcorner.com/article/what-is-azure-functions/
+
+
+Dot Net Core Interview Question Answer
+https://www.dotnettricks.com/learn/aspnetcore/top-20-asp-net-core-interview-questions-and-answers
+
+Good QA for C#
+https://www.codingdojo.com/blog/c-interview-questions
+https://www.fullstack.cafe/blog/c-sharp-interview-questions
+
+
+https://www.c-sharpcorner.com/UploadFile/puranindia/C-Sharp-interview-questions/  : Good Question Answer
+
+https://dotnetcorecentral.com/blog/asp-net-core-streaming-application-using-kafka-part-1/
+https://dotnetcorecentral.com/blog/asp-net-core-streaming-application-using-kafka-part-2/
+
+
+
+-- Design patterns
+Edureka : Microservices Design Patterns | Microservices Architecture Patterns : https://www.youtube.com/watch?v=xuH81XGWeGQ
+
+
+Edureca Azure cloude :
+https://www.youtube.com/watch?v=0bPJPiX89K0&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0
+Edureka Azure Devops Deploying CI/CD Pipeline and others
+https://www.youtube.com/watch?v=Ce08Sp9g_JI&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0&index=33
+
+
+
+
+
+============================================== Code and Concept =====================================
+https://www.c-sharpcorner.com/UploadFile/8a67c0/method-overloading-and-method-overriding-in-C-Sharp/
+
+Code first EF and Unit test
+https://www.c-sharpcorner.com/article/unit-testing-using-xunit-and-moq-in-asp-net-core/
+
+
+=============================  Code example  ====================================================================
+Clock Angle 1 easy and Has lots of example :https://dotnettutorials.net/lesson/how-to-find-the-angle-between-hour-and-minutehands-of-a-clock-at-any-given-time/
+Clock Angle 2 with Unit Test : https://www.c-sharpcorner.com/article/find-out-the-angle-between-hour-hand-and-minute-hand-in-c-sharp/
+https://www.c-sharpcorner.com/blogs/finding-distinct-elements-in-a-data-structure-using-c-sharp
+https://stackoverflow.com/questions/756055/listing-all-permutations-of-a-string-integer
+
+Code Example : https://ankitsharmablogs.com/csharp-coding-questions-for-technical-interviews/
+
+https://www.interviewsansar.com/c-program-interview-question-for-practice/
+
+
+
+//Constuctor Call :
+https://www.interviewsansar.com/csharp-programs-practice-class-object-constructor/2/
+https://www.interviewsansar.com/csharp-programs-practice-class-object-constructor/
+https://www.interviewsansar.com/csharp-exercises-solutions-abstract-class/
+
+
+============================================== Design pattern code or concept  ============================================
+https://www.codeproject.com/Tips/769084/Observer-Pattern-Csharp
+
+
+
+
+Singletone : https://csharpindepth.com/articles/singleton
+
+https://enlabsoftware.com/development/how-to-implement-repository-unit-of-work-design-patterns-in-dot-net-core-practical-examples-part-one.html
+
+What is the repository design pattern?
+Repositories are classes or components that encapsulate the logic required to access data sources. They centralize common data access functionality, providing better maintainability and decoupling the infrastructure or technology used to access databases from the domain model layer.
+
+
+What is the unit of work pattern?
+The repository and unit of work patterns are intended to create an abstraction layer between the data access layer and the business logic layer of an application. ... The unit of work class coordinates the work of multiple repositories by creating a single database context class shared by all of them.
+
+============================================== Batch File To start service ============================================
+
+net start ILXKafkaManager
+echo ILXKafkaManagerservice is started
+
+or
+net stop ILXKafkaManager
+echo ILXKafkaManagerservice is stopped
+
+============================================== Microservice Kafka ============================================
+https://dotnetcorecentral.com/blog/asp-net-core-streaming-application-using-kafka-part-1/
+
+https://dotnetcorecentral.com/blog/reactive-extensions-in-net-core/
+
+============================================== Example all possible words ============================================
+https://stackoverflow.com/questions/24756924/how-to-generate-all-possible-words
+
+public IEnumerable<String> GenerateStrings (IEnumerable<char> characters, int length) {
+    if(length > 0) {
+        foreach(char c in characters) {
+            foreach(String suffix in GenerateStrings(characters,length-1)) {
+                yield return c+suffix;
+            }
+        }
+    } else {
+        yield return string.Empty;
+    }
+}
+============================================== Dictionary vs Hashtable ============================================
+https://www.c-sharpcorner.com/blogs/difference-between-dictionary-and-hashtable-in-c-sharp
+
+System.Collections.Generic //: Represents a collection of keys and values.
+      public class Dictionary<TKey, [NullableAttribute(2)] TValue> : ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IDictionary<TKey, TValue>, IReadOnlyCollection<KeyValuePair<TKey, TValue>>, IReadOnlyDictionary<TKey, TValue>, ICollection, IDictionary, IDeserializationCallback, ISerializable where TKey : notnull
+
+Dictionary
+Dictionary is generic type Dictionary<TKey,TValue>
+Dictionary class is a strong type < TKey,TValue > Hence, you must specify the data types for key and value.
+There is no need of boxing/unboxing.
+When you try to access non existing key dictionary, it gives runtime error.
+Dictionary maintains an order of the stored values.
+There is no need of boxing/unboxing, so it is faster than Hashtable.
+
+
+System.Collections //  Represents a collection of key/value pairs that are organized based on the hash
+public class Hashtable : ICollection, IEnumerable, IDictionary, ICloneable, IDeserializationCallback, ISerializable
+
+Hashtable
+Hashtable is non-generic type.
+Hashtable is a weakly typed data structure, so you can add keys and values of any object type.
+Values need to have boxing/unboxing.
+When you try to access non existing key Hashtable, it gives null values.
+Hashtable never maintains an order of the stored values
+Hashtable needs boxing/unboxing, so it is slower than Dictionary.
+
+=============================================  IEnumerable vs IEnumerator =======================
+https://dzone.com/articles/ienumerable-vs-ienumerator
+https://www.c-sharpcorner.com/UploadFile/78607b/difference-between-ienumerable-icollection-and-ilist-interf/  : ToCheck
+
+If we want to iterate through the list (or any collection) at one time, then IEnumerable is the best choice, but if we want to preserve the state of an iteration variable, then we should go with IEnumerator.
+
+IEnumerable has method : IEnumerator GetEnumerator();
+IEnumerator has : object? Current { get; } ,  bool MoveNext();  Reset()
+
+public interface IEnumerator
+    {
+       
+        // Returns:
+        //     The element in the collection at the current position of the enumerator.
+        object? Current { get; }      
+        bool MoveNext();
+        void Reset(); Sets the enumerator to its initial position, which is before the first element
+    }
+
+https://www.linkedin.com/pulse/ienumerable-vs-icollection-idictionary-ilist-hasan-shahjahan/
+
+============================================== abstract-class static constructor ============================================
+An abstract call can have static constructor and to note that the static constructor should be private not public or else compiler will flash an error. Hence, program is fine.
+
+
+============================================== SQL Queries and Questions ============================================
+https://www.mssqltips.com/sqlservertip/4322/sql-server-differences-of-char-nchar-varchar-and-nvarchar-data-types/
+
+
+
+============================================== Async await Nice Article ============================================
+https://dev.to/tyrrrz/interview-question-async-await-c-34in
+
+https://www.c-sharpcorner.com/article/task-and-thread-in-c-sharp/#:~:text=Differences%20Between%20Task%20And%20Thread,-Here%20are%20some&text=The%20Thread%20class%20is%20used%20for%20creating%20and%20manipulating%20a,tasks%20asynchronously%20and%20in%20parallel.&text=A%20Task%20is%20a%20higher%20level%20concept%20than%20Thread.  //ToCheck
+
+
+https://devblogs.microsoft.com/dotnet/configureawait-faq/
+
+============================================== stack vs heap  : Alexey Golub : https://dev.to/tyrrrz ============================================
+
+https://dev.to/tyrrrz/interview-question-heap-vs-stack-c-5aae : Nice Question Answers :
+https://dev.to/tyrrrz/creative-use-of-extension-methods-in-c-1fe5
+
+============================================== #JavaScript ============================================
+https://dev.to/nehasoni__/playing-with-javascript-objects-k4h
+
+
+
+
+============================================== aaa ============================================
+https://www.c-sharpcorner.com/UploadFile/b1df45/unit-of-work-in-repository-pattern/#:~:text=Unit%20of%20Work%20is%20the,update%2Fdelete%20and%20so%20on.
+
+https://enlabsoftware.com/development/how-to-implement-repository-unit-of-work-design-patterns-in-dot-net-core-practical-examples-part-one.html
+
+https://www.pluralsight.com/guides/csharp-in-out-ref-parameters : good
+
+============================================== #Azure ============================================
+
+https://www.c-sharpcorner.com/UploadFile/8a67c0/upload-image-in-azure-blob-storage-with-Asp-Net-mvc/
+
+
+============================================== #Collections ============================================
+https://www.tutorialsteacher.com/csharp/csharp-collection
+
+https://www.c-sharpcorner.com/UploadFile/pranayamr/open-close-principle/
+
+============================================== aaa ============================================
+
+extra to check
+https://www.edureka.co/blog/interview-questions/sql-interview-questions
+https://www.c-sharpcorner.com/UploadFile/a20beb/ienumerable-vs-iqueryable-in-linq/
+https://medium.com/swlh/vending-machine-design-a-state-design-pattern-approach-5b7e1a026cd2
+https://www.c-sharpcorner.com/article/learn-angular-8-step-by-step-in-10-days-component-day-2/
+https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/
+https://codinginfinite.com/top-javascript-articles-past-month/
+
+https://hackernoon.com/my-top-10-javascript-articles-from-2019-we463yfk
+https://dev.to/caiosousa/c-object-oriented-programming-oop-cheat-sheet-5bkf
+https://dev.to/nehasoni__/playing-with-javascript-objects-k4h
+https://dev.to/tyrrrz/creative-use-of-extension-methods-in-c-1fe5
+
+============================================== #WCF #WebAPI #WcfVsWebApi ============================================
+https://www.dotnettricks.com/learn/webapi/difference-between-wcf-and-web-api-and-wcf-rest-and-web-service
+
+Which is better WCF or Web API?
+WEB API is a better choice for simpler, light weight services. WEB API can use any text format including XML and is faster than WCF. WEB API can be used to create full-blown REST Services.
+
+When should we select WCF and Web API?
+WCF is the ideal choice when you need to create a service that supports unique scenarios such as duplex communication, one way messaging and message queues, among others. Web API should be the option when you need to build resource-oriented services over HTTP that can utilize the full features of HTTP.
+
+WCF :
+ duplex communication,
+ one way messaging
+ message queues
+ 
+Http
+HTTPS
+TCP
+MSMQ
+NamedPipe  
+
+Web API to Support both Json and XML
+
+Set the followings in App_Start/WebApiConfig.cs
+GlobalConfiguration.Configuration.Formatters.Add(new JsonMediaTypeFormatter());
+GlobalConfiguration.Configuration.Formatters.Add(new XmlMediaTypeFormatter());
+Set application/json or application/xml to Accept header in request-side
+
+
+To Whom Choose Between WCF or WEB API
+Choose WCF when you want to create a service that should support special scenarios such as one way messaging, message queues, duplex communication, etc.
+
+Choose WCF when you want to create a service that can use fast transport channels when available, such as TCP, Named Pipes, or maybe even UDP (in WCF 4.5), and you also want to support HTTP when all other transport channels are unavailable.
+
+Choose Web API when you want to create a resource-oriented service over HTTP that can use the full features of HTTP (like URIs, request/response headers, caching, versioning, various content formats).
+
+Choose Web API when you want to expose your service to a broad range of clients including browsers, mobiles, iphone, and tablets.
+============================================= #Observable Vs #Promise ==================================
+getOrganizationHierarchy(): Observable<any[]> {
+        return this.http.get<any[]>(this.apiOrganizationHierarchy);
+    }
+
+    getWells(): Observable<any[]> {
+        return this.http.get<any[]>(this.opsSolUrl);
+    }
+
+    // Get the well-type at a perticular time.
+    getWellLiftType(filterParameters) {
+        const promise = new Promise((resolve) => {
+            this.http.post(this.getWellLiftTypeUrl, filterParameters).subscribe((response) => {
+                resolve(response);
+            });
+        });
+
+        return promise;
+    }
+============================================ #Infosys ===================================================
+Responsive and CSS HTML5 features
+Generics
+Ajax Jquery JS : call http
+Estimation technic
+WCF Security
+WCF Binding for accesing through Java and Dotnet
+Concurrency and security
+Ang - Observable
+View Data View bag
+DI container
+Responsive
+Team lead + Git Create Branch by command
+SOA
+Nth Div inside Div : Jquery
+HtmlHandler and HtmlModule
+
+Learning objectives
+OWASP Top Ten vulnerabilities
+Cross-site scripting
+SQL injection
+Cross-site request forgery
+Storing secrets
+Encrypting Web.config settings
+Password hashing
+Authenticating in the app
+Securing cookies and sessions
+Error handling
+============================ #ProjectManagement #Estimation#Technique =======================================
+===============================================================================================
+Use the other offer as leverage and not threat
+Polite and Gratitude
+Would it be appropriate if we discuss .. do not accept or reject offer at the moment you received
+
+Discuss after lunch .. On thursday ..bcaz they willl think to close it up.
+
+keep Quite and study it ... thank you so much i really thank you for making me offer and
+i see here .. baseed on my resaech and my experiecne i expect salary in the range of ..
+based on my success in all my previous organization
+
+============================================== #Edureka Azure Video ============================================
+
+Edureka : Azure Active Directory | Microsoft Azure Tutorial for Beginners | Azure 70-533 Training | Edureka
+https://www.youtube.com/watch?v=OQwQmikCLs4&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0&index=20
+Windows AD vs Azure AD
+
+Machine Learning :
+teaching your machine how to react to a particular situation based on the data
+
+AKS : Introduction To Azure Kubernetes Service (AKS) | Azure Container Service | Azure Training | Edureka
+ https://www.youtube.com/watch?v=o5qkgsyfRao&list=PL9ooVrP1hQOHdFketT6JzY-71nBgIu-n0&index=38
+ 
+ language developed in : golang
+
+
+============================================== #Event Driven Vs #Request Driven  ============================================
+https://danieltammadge.com/2021/02/how-to-prevent-message-loss-when-publishing-events/
+https://danieltammadge.com/2021/01/event-driven-vs-request-driven-architecture-user-registration/#:~:text=The%20Pros%20of%20request%2Ddriven%20vs%20event%2Ddriven&text=Simpler%20to%20develop%2C%20maintain%20and,than%20the%20request%2Ddriven%20solution. below is the Video link
+https://youtu.be/U-U3bpljZd0
+
+
+============================================== MS #Resilient - #Fault #tolerent ============================================
+https://dzone.com/articles/making-your-microservices-resilient-and-fault-tole-1
+
+============================================ #Kafka #RabbitMQ =============================================
+https://docs.cloudera.com/documentation/kafka/latest/topics/kafka_performance.html#Handling%20Large%20Messages
+
+https://developer.ibm.com/technologies/messaging/articles/advantages-of-an-event-driven-architecture/
+This messaging backbone can either be based on a traditional publish-subscribe message broker (such as IBM MQ) or a distributed log (such as Apache Kafka). A publish-subscribe message broker allows multiple
+
+
+
+============================================== #Redis ============================================
+https://www.youtube.com/watch?v=jwek4w6als4  good video : https://www.linkedin.com/in/nick-chapsas/
+https://www.youtube.com/watch?v=U3RkDLtS7uY Gaurav Sen : What is Distributed Caching? Explained with Redis! https://www.linkedin.com/in/gaurav-sen-56b6a941/
+
+
+============================================== #DB #Designs ============================================
+https://www.youtube.com/watch?v=cODCpXtPHbQ Code Karle Good Video
+
+============================  #Angular ===================
+https://stackblitz.com/edit/angular-c4cxgd?file=src%2Fapp%2Fapp.component.ts  HCL interview
+https://jsonplaceholder.typicode.com/posts  
+
+============================================= #god ================================
+https://www.c-sharpcorner.com/article/god-object-a-code-smell/#:~:text=The%20God%20object%20is%20a,much%20or%20does%20too%20much.&text=If%20a%20class%20contains%20too,Object%2C%20a%20bad%20programming%20practice.
+
+===================================== #DotNetCore Vs #DotNet ============================================
+What makes dot net core platform independent
+GC
+UnManagedCode
+#Middleware Vs #ActionFilter
+https://channel9.msdn.com/Series/aspnetmonsters/ASPNET-Monsters-91-Middleware-vs-Filters
+https://www.edgesidesolutions.com/middleware-vs-filters-asp-net-core/
+
+==========================================#SingleSignon ==============================================================
+request
+request pipeline
+execution pipeline
+startUp => Configure=> Request Processing Pieline
+ Middleware ::-> Logging -> StaticFiles -> mvc middleware
+Update each middlware using nuget packaging - for static-static file middlware
+Authentication , Authorization , mvc middleware
+
+
+Console.developer.googl.com
+Create Project
+Goole+ API => Credentiinlas DropDown : Credentions OaUTH consent screan
+Create OAuth client ID :
+Url : //localhost /signing-google
+Go StartUpAuth.cs
+app.UseGoogleAuthentication
+{
+clientID :
+Scecret
+}
+============================================= #WoltersKluwar #Priyank =====================================================================
+DI container implementation
+ Unity container
+ Service Locater -> FActory and Singltone
+Middleware
+Microsoft Library -subscription used for reference and certification
+
+Non Cluster Index - included columns
+Secur CORK
+Pipes , Observable,
+=================================== C# Basic ===================================
+
+
+=================================== #IDisposable #Using ===================================
+https://www.c-sharpcorner.com/UploadFile/b08196/idisposable-interface-in-C-Sharp/#:~:text=IDisposable%20is%20an%20interface%20that,database%20connections%20and%20so%20on.
+
+https://www.ssw.com.au/rules/when-to-implement-idisposable
+
+https://www.c-sharpcorner.com/article/the-using-statement-in-C-Sharp/
+https://www.c-sharpcorner.com/UploadFile/manas1/usage-and-importance-of-using-in-C-Sharp472/
+
+=================================== #Angular #LifeCycle #Hooks  # ===================================
+https://www.pluralsight.com/guides/using-lifecycle-hooks
+
+
+https://www.syncfusion.com/blogs/post/angular-promises-versus-observables.aspx
+
+=================================== #  # ===================================
+
+=================================== #  # ===================================
+
+Func Action Predicate Deligate  
+https://www.c-sharpcorner.com/UploadFile/b1df45/var-vs-dynamic-keywords-in-C-Sharp/
+
+====================== #var #dynamic object ===================================
+var is a statically typed variable. It results in a strongly typed variable, in other words the data type of these variables are inferred at compile time. This is
+ based on the type of value that these variables are initialized with.
+dynamic are dynamically typed variables. This means, their type is inferred at run-time and not the compile time in contrast to var type.
+
+var type of variables are required to be initialized at the time of declaration
+dynamic type variables need not be initialized when declared.
+
+
+var does not allow the type of value assigned to be changed after it is assigned to.
+
+Object type : even string assigned we dont get intellisense for string method.., we need to explisitly convert like Convert.ToString()
+Type case is needed
+
+
+
+======================= #SingleOrDefault #FirstOrDefault ====================================
+SingleOrDefault throws an exception
+FirstOrDefault returns the first record
+Conclusion:
+
+If you want an exception to be thrown if the result set contains many records, use SingleOrDefault.
+
+If you always want 1 record no matter what the result set contains, use FirstOrDefault
+
+https://www.pluralsight.com/guides/csharp-in-out-ref-parameters
+ref out in
+Both the ref and in require the parameter to have been initialized before being passed to a method. The out modifier does not require this and is typically not initialized prior to being used in a method.
+
+In restrict new inistialization of object in method
+static void Enroll(in Student student)
+  {
+    // With in assigning a new object would throw an error
+    // student = new Student();
+
+
+
+It's important to note that in, out, and ref cannot be used in methods with the async modifier. You can use them in synchronous methods that return a task, though.
+
+You cannot use them in iterator methods that have a yield return or yield break either.
+Using the out modifier, we initialize a variable inside the method. Like ref, anything that happens in the method alters the variable outside the method. With ref,
+
+
+is as
+using
+
+web api - put post
+authorization
+content type negatiation +
+
+factory singltone facade
+dependency solid
+cte
+
+fun proc
+performance tuning
+
+
+
+
+========================================= #Webpack #Gulp======================================================
+Webpack is a tool that lets you compile JavaScript modules, also known as module bundler. Given a large number of files, it generates a single file (or a few files) that run your app. It can perform many operations: helps you bundle your resources.
+
+Should I Use Webpack? If you're building a complex Front End application with many non-code static assets such as CSS, images, fonts, etc, then yes, Webpack will give you great benefits
+
+Webpack is a bundler whereas Gulp is a task runner, so you'd expect to see these two tools commonly used together. ... Simply put, Webpack is such a powerful tool that it can already perform the vast majority of the tasks you'd otherwise do through a task runner.
+
+================================= #Responsive Web Site #HTML5 #CSS3 ==============================================================
+HTML5 and CSS3 are both evolving versions and they have been successfully moulding the things just the way we want them to be. we shall read about how CSS3 and HTML5 are different from their previous versions and what features are most useful in web application development.
+
+HTML5:
+
+New Doctype: HTML5 has a new doctype function where you only need to write and you are ready to go. There is no struggle of memorizing complicated and difficult codes. The declaration is very simple in this version and it allows browsers to render page in the standard mode.
+Media Support: HTML5 brings you an outstanding audio and video support. You can easily add audio and video files to make your website look lively and engaging.
+Flawless content editing: The current HTML version has an attribute called contenteditable that helps you edit content quickly and easily. This can help in taking advantage of local storage and various other uses.
+Article and Section: The HTML5 is provided with two semantic tags <article> and <section> to help you increase your search engine visibility. This will facilitate users to compose an article into multiple sections and integrate multiple articles into a single section.
+The Figure element: The previous versions of HTML lack the ability to provide any caption for the image. The previous HTML versions did not provide any way to associate the caption to make it more informative and comprehensive. However, in HTML5 there is new figure element which can be combined with element in order to easily associate caption with the other elements of an image.
+CSS3:
+
+Box Shadows: This is a new feature that allows a content slide beneath are such as footer and it gives an appearance as if it is coming out or sinking into the website. This process is pretty simple and there is no need for the developer to create a new image using JavaScript plugin.
+Border Images: CSS3 has introduced a new feature that is border images. This feature allows you to exchange a border with an image. It helps you specify an image in place of a plain solid coloured border.
+CSS3 selectors: CSS selectors are more updated and improved in CSS3 version. With these selectors, DOM elements can be chosen on the bases of their attributes easily. There is no need to specify classes and ID’s for each and every element. You can use the field elements to perform styling functions.
+Font Additions: Adding fonts is easy in CSS3 and all you need to do is just upload the file to your server, link to the CSS file and add fonts as per your choice.
+Opacity levels: In previous versions, designers had to create a new image or make use of CSS filters. But in CSS3, you simply have to provide an input that will get the desirable effects.
+CSS3 and HTML5 are now more improved and this can help designers will have more possible ways to provide sophisticated projects. They are technologically advanced and thus we can get the best out of them for web application development.
+
+HTML Responsive Web Design
+Setting The Viewport. To create a responsive website, add the following <meta> tag to all your web pages: ...
+Responsive Images. Responsive images are images that scale nicely to fit any browser size. ...
+Responsive Text Size. ...
+Media Queries. ...
+Responsive Web Page - Full Example. ...
+Responsive Web Design - Frameworks. ...
+Bootstrap.
+
+What is Responsive Web Design?
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):
+
+https://www.w3schools.com/html/html_responsive.asp
+
+1 Setting The Viewport
+To create a responsive website, add the following <meta> tag to all your web pages:
+
+Example
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+2 Responsive Images
+Responsive images are images that scale nicely to fit any browser size.
+
+3 Using the width Property
+If the CSS width property is set to 100%, the image will be responsive and scale up and down:
+
+Example
+<img src="img_girl.jpg" style="width:100%;">
+
+Problem with the width property
+Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.
+
+Using the max-width Property
+If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+4 Show Different Images Depending on Browser Width
+The HTML <picture> element allows you to define different images for different browser window sizes.
+
+Resize the browser window to see how the image below change depending on the width:
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+
+5 Responsive Text Size
+The text size can be set with a "vw" unit, which means the "viewport width".
+
+That way the text size will follow the size of the browser window:
+<h1 style="font-size:10vw">Hello World</h1>
+Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+
+6 Media Queries
+In addition to resize text and images, it is also common to use media queries in responsive web pages.
+
+With media queries you can define completely different styles for different browser sizes.
+
+Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens:
+
+<style>
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+
+ 6.1
+
+#Bootstrap : https://www.w3schools.com/bootstrap/bootstrap_pagination.asp
+Another popular CSS framework is Bootstrap. Bootstrap uses HTML, CSS and jQuery to make responsive web pages.
+=================================== #MSTEst #MOQ============================================================
+http://www.advancesharp.com/blog/1238/test-driven-development-tdd-through-mocking-using-moq-framework
+
+public interface IDBContext
+{
+    Order GetNextOrderDetailFromDB(int orderID);
+
+    void SaveOrder(Order nextOrder);
+}
+
+public class OrderProcessingWithMoq
+{
+    public Order ProcessGSTForNextOrder(IDBContext dbContext, int orderId)
+    {
+        var nextOrder = dbContext.GetNextOrderDetailFromDB(orderId);
+
+        nextOrder.Amount = CalculateTotalAmountWithGST(nextOrder);
+
+        dbContext.SaveOrder(nextOrder);
+
+        return nextOrder;
+    }
+
+    public decimal CalculateTotalAmountWithGST(Order order)
+    {
+        return order.Amount + (order.Amount * 10 / 100);
+    }
+}
+
+[TestMethod]
+public void TestOrderProcessing()
+{
+        int orderId = 1234;
+
+        Mock<IDBContext> mockDBContext = new Mock<IDBContext>();
+
+        mockDBContext.Setup(t => t.GetNextOrderDetailFromDB(It.IsAny<int>())).Returns(new Order() { OrderId = orderId, Amount = 1000 });
+        mockDBContext.Setup(t => t.SaveOrder(It.IsAny<Order>()));
+
+        OrderProcessingWithMoq orderProcessing = new OrderProcessingWithMoq();
+        var modifiedOrder = orderProcessing.ProcessGSTForNextOrder(mockDBContext.Object, orderId);
+
+        Assert.IsTrue(modifiedOrder.Amount == 1100);
+ }
+================================================#Docker===============================================
+Start using Docker!
+
+❓ What is docker?
+➕ Docker is a platform that allows developers to package, deploy and run applications in isolated environments.
+
+❓ What is a Docker image?
+➕ A Docker image is a read only template that contains a set of instructions for creating a container that can run on the Docker platform.
+
+❓ What is a docker container?
+➕ A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
+
+❓ What is the difference between Docker image & Docker container?
+➕ An image is a read only template with code and dependencies while a container is a running instance of an image that provides an isolated environment for an application to run.
+
+❓ Where can Docker be used?
+➕ Docker can be used to build and deploy applications in various environments including development, testing, staging and production(across different operating systems and cloud platforms).
+
+⭐ Dockerfile For .NET Core App: https://lnkd.in/eEZ3HvNz
+
+⭐ Below is a list of Docker commands that you may find useful to review!
+
+Read more:
+https://www.docker.com
+
+===============================================================================================#mvc
+https://www.c-sharpcorner.com/UploadFile/puranindia/ASP-NET-MVC-Interview-Questions/
+
+9. Mention what is the difference between Temp data, View, and View Bag?
+In ASP.NET MVC there are three ways to pass/store data between the controllers and views.
+
+ViewData
+
+ViewData is used to pass data from controller to view.
+It is derived from ViewDataDictionary class.
+It is available for the current request only.
+Requires typecasting for complex data types and checks for null values to avoid an error.
+If redirection occurs, then its value becomes null.
+ViewBag
+
+ViewBag is also used to pass data from the controller to the respective view.
+ViewBag is a dynamic property that takes advantage of the new dynamic features in C# 4.0
+It is also available for the current request only.
+If redirection occurs, then its value becomes null.
+It doesn’t require typecasting for the complex data type.
+TempData
+
+TempData is derived from TempDataDictionary class
+TempData is used to pass data from the current request to the next request
+It keeps the information for the time of an HTTP Request. This means only from one page to another. It helps to maintain the data when we move from one controller to another controller or from one action to another action
+It requires typecasting for complex data types and checks for null values to avoid an error. Generally, it is used to store only one time messages like the error messages and validation messages
+====================#Caching
+https://medium.com/@kenslearningcurve/caching-in-c-dedf13cef263
+
+Types of Caching
+There are three types of caching:
+
+Persistent in-process Cache
+The cache is stored in a file or database. The advantage is that if the process (application, web app, etc) stops the cache keeps existing.
+Distributed Cache
+The cache is being saved on a physical server. A good example of this type is Redis/ This was built for Linux but works with .NET too.
+In-Memory Cache
+The cache stays in the process. If the process stops the cache will be deleted as well.
+
+
+

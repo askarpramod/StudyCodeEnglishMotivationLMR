@@ -1,0 +1,194 @@
+===================#topic
+https://www.youtube.com/watch?v=1CHY9197ftE
+AWS Cloud Computing Topics for Career Growth (From an AWS Sr. SA)
+
+1.
+2. Event drien architecure - AWS has SNS , 
+3. cost optimization- for serverless and - 
+  Lambda- Lamda utilization to check  
+   Container - clode watch 
+4.new language - basic - Pythen 
+
+--
+scalability, elasticity n 
+Angular Vs React
+which cicd- jenkins need
+caching    
+callbackm/ fallback
+
+==================#Performance Monitoring #NewRelic 
+
+NewRelic monitor user experience response of the application 
+  Log monitoring 
+  APM - Application performance monitoring 
+  Infrastructure 
+
+step 1- Register a trial License
+step 2- run your APp 
+step 3- install newrlic Agnt 
+step 4- within a min , your app "NewRelic Agent" would send data to NewRelic cloud
+
+Infra - Datadog
+log- splunkRUM - 
+=========================
+AppDynamics (Competitor for NewRelic )
+================
+Jemeter is open source tool for performance check 
+
+===
+
+===============#gitRepo 
+
+https://github.com/choudhurynirjhar
+
+
+================ AWS Certification 
+
+Linux -> 
+blog.learncodeonline.in/series/linux 
+
+AWS :
+CCP - Foundation -- can skip -- CCP -- Sales person kind of 
+
+Associate Level - soln Architect , Dev Associate, Sis ops Administrative 
+
+Just finished the course “AWS Certified Solutions Architect - Associate (SAA-C02) Cert Prep: 7 Application Deployment”!
+
+
+https://github.com/simplesteph
+
+
+https://github.com/aspnetrun/run-aspnetcore-microservices
+
+
+============= Public API -- Docker and Kubernetes --
+pipeline-gated --> first pipeline fr code build dot netc code an test and integration
+pipeline-deploy -- release the previously build
+
+infrastructure yaml -> infra
+infrastructure gated 
+infrastructure release 
+Nurelic -- 
+Docker Desktop 
+
+============== #AWSLambda
+https://www.rahulpnath.com/blog/function-urls-in-aws-lambda-dotnet/
+
+=============== #Docker #Kubernetes
+https://www.simplilearn.com/tutorials/docker-tutorial/what-is-dockerfile
+
+
+When should I use Dockerfile?
+One should use a Dockerfile when there’s a need to distribute/collaborate on the app’s operating system with a team. Use Dockerfile as the version control system for the entire app’s OS. Or use Dockerfile to run the code to the laptop in the same environment as the server you are working on. 
+
+Is Dockerfile a text file?
+Dockerfile is a text document containing all the commands the user requires to call on the command line to assemble an image. With the help of a Dockerfile, users can create an automated build that executes several command-line instructions in succession. 
+
+How do I create a simple Dockerfile?
+To create a Dockerfile, set up Docker and Docker Hub. Create the original Docker container and then create a file on it. Make changes to the container, and finally, create a new image. 
+
+What is Dockerfile language?
+Go language is used to write Docker. A Dockerfile is a text file that contains collections of instructions and commands that will be automatically executed in sequence in the docker environment for building a new docker image. 
+
+What is Docker compose vs. Dockerfile?
+The key difference between Docker compose, and Docker is that the Docker contents describe how to create and build a Docker image, while Docker compose is a command that runs Docker containers based on settings described in a docker-composed.yaml file. 
+
+What is a .dockerignore file?
+A .dockerignore file allows you to specify a list of files or directories that Docker is to ignore during the build process. It is similar to a .gitignore file, which is used when you build Git repositories. You can specify the list of files and directories inside the .dockerignore file. 
+
+How do I commit a docker container?
+First, you need to pull a docker image. Then deploy the container, modify it and commit the changes to the image. When you commit to changes, you essentially create a new image with an additional layer that modifies the base image layer. 
+
+What is docker context?
+With a docker context, importing and exporting context on different machines with the Docker installed gets easier. One can also use a docker context export command to export an existing context to a file, which can be imported to another machine with the docker client installed. 
+
+What is the use of Docker in DevOps?
+A Docker container image in DevOps is a lightweight, executable, and standalone package of software that includes everything needed to run an app, runtime, system tools, settings, system libraries, and code. Containers simplify the build/test/deploy pipelines in DevOps.  
+
+Is Dockerfile COPY recursive?
+COPY and ADD are the two commands that Docker provides for copying files from the host to the Docker image when building it. COPY command copies files recursively, given explicit source and destination directories or files. 
+
+Is Dockerfile a Docker image?
+A Docker image is built automatically by reading the instructions from a Dockerfile, a text file containing all commands needed to build a given image. A Dockerfile adheres to a specific set of instructions and format, producing a Docker image when you build it. 
+============= Entity Framework Performance Tips & Tricks 
+1. Use AsNoTracking() Method
+Entity Framework tracks objects that it retrieves from the database by default, which means that it keeps a reference to these objects in its memory.
+This can lead to performance issues, especially when dealing with large datasets.
+To avoid this, you can use the AsNoTracking() method to tell Entity Framework not to track the objects it retrieves from the database.
+
+2. Use IQueryable Instead of IEnumerable
+When querying data using Entity Framework, it's important to use IQueryable instead of IEnumerable.
+IQueryable allows Entity Framework to optimize the query by generating SQL statements that are executed on the database server, while IEnumerable retrieves all data from the database and performs filtering and sorting operations in memory.
+
+3. Use Stored Procedures
+Stored procedures are pre-compiled database objects that can be used to execute complex queries or operations on the database.
+They can be used with Entity Framework by mapping them to a function in the DbContext class.
+
+4. Use Lazy Loading with Caution
+Lazy loading is a feature in Entity Framework that allows related objects to be loaded on-demand.
+While it can be convenient, it can also lead to performance issues, especially when dealing with large datasets. It's important to use lazy loading with caution and only when necessary.
+
+5. Use Indexes
+Indexes are database objects that can be used to speed up data retrieval by providing a quick lookup mechanism.
+They can be used with Entity Framework by specifying the Index attribute on the appropriate properties in the DbContext class.
+
+6. Avoiding in-memory executions is a crucial consideration for any application that deals with large data sets. In-memory executions can be resource-intensive and can cause performance issues that can degrade the user experience.
+When working with collections in your application, it's important to be mindful of how you are querying them.
+One common issue that developers face is the use of ToList() before calling the Where() method, which can result in poor performance and a suboptimal user experience.
+
+=========#How did I prepare LLD(Low Level Design) for Microsoft interviews...
+Complete preparation strategy!!
+
+-> 1st week:
+- Learn/Revised OOPS concepts,
+- Learn/Revised SOLID principles,
+
+-> 2nd week:
+- Learnt mostly used Design Patterns
+a) Singleton (Most important)
+b) Factory,
+c) State,
+d) Adapter,
+e) Command,
+f) Observer,
+g) Builder,
+- Learnt exactly in which scenarios we can use a particular design pattern,
+
+-> 3rd week:
+- Concurrency concepts (most important)
+a) Thread,
+b) Locks,
+c) Condition Variables,
+d) Barriers,
+e) Atomic operations,
+f) Async operations, future, promise
+- Tried to solve LeetCode concurrency problems,
+
+-> 4th week:
+- Practiced most popular questions around multithreading,
+a) Producer-consumer,
+b) Reader-writer,
+c) DFS (Multithreading) etc.
+- Practiced the most popular questions around LLD (like BookMyShow, uber, etc)
+- Also searched Google for other solutions to compare mine and the other's solutions,
+
+PS: Practice and consistency is the key, Just keep grinding!
+PS2: No specific resources, just search over Google for the above-mentioned topics and try to learn from there!
+
+===#async #await
+public async Task < string > GetDataAsync() {
+    HttpClient client = new HttpClient();
+    HttpResponseMessage response = await client.GetAsync("http://example.com/data");
+    string d
+	
+	ata = await response.Content.ReadAsStringAsync();
+    return data;
+}
+
+Threading is about workers; asynchrony is about tasks.
+
+=================#DotNet6 migration 
+https://www.c-sharpcorner.com/blogs/migration-from-net-core-31-to-net-6
+
+
+

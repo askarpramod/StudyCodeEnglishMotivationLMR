@@ -1,0 +1,70 @@
+	https://github.com/bhrugen/Mango_Microservices.git
+
+1.      Dot net core
+
+2.      Rest API
+
+3.      Any cloud
+
+4.      Docker and kubernetives
+
+5.      Any UI Tool
+
+6.      Oops concept
+
+7.      Programming
+
+Differences Between Task And Thread
+Here are some differences between a task and a thread.
+
+1. The Thread class is used for creating and manipulating a thread in Windows. 
+A Task represents some asynchronous operation and is part of the Task Parallel Library, a set of APIs for running tasks asynchronously and in parallel.
+
+
+2.The task can return a result. 
+ There is no direct mechanism to return the result from a thread.
+
+3.Task supports cancellation through the use of cancellation tokens. 
+But Thread doesn't.
+
+4. A task can have multiple processes happening at the same time. Threads can only have one task running at a time.
+
+
+5.We can easily implement Asynchronous using ’async’ and ‘await’ keywords.
+
+6.A new Thread()is not dealing with Thread pool thread, whereas Task does use thread pool thread.
+
+7.A Task is a higher level concept than Thread.	
+	
+The Thread class is used for creating and manipulating a thread in Windows. 
+A Task represents some asynchronous operation and is part of the Task Parallel Library	
+
+============ IRIS Barclays 
+C# .Net fullstack (3 positions) 
+
+Exp- 7 to 12years
+
+C# .Net
+Angular (8+)
+Database- MS SQL
+Multithreading
+OOPS
+Mandatory Skills
+
+5+ years proven experience as a Senior C# and SQL Developer, working on challenging projects
+Extensive knowledge and hands-on experience with C#, .NET framework, and SQL.
+Strong C# server-side development experience and proficiency in multi-threading, memory management, generics, classes, structures and objects
+Strong understanding of object-oriented programming principles and design patterns.
+Proficiency in database design and development using SQL Server or a similar RDBMS. Be comfortable with SQL queries, tables, stored procedures, performance tuning and troubleshooting DB issues
+ 
+
+Experience with web development frameworks and technologies, such as ASP.NET, MVC, and JavaScript.
+Must have good front-end development experience with Angular
+Experience modernizing front-end Microsoft applications
+Good domain experience in Financial services/capital markets/investment banking
+Familiarity with Agile development methodologies and tools, such as Scrum or Kanban.
+Excellent problem-solving and analytical skills, with a keen eye for detail.
+Ability to work effectively in a team environment and collaborate with diverse stakeholders.
+Excellent verbal and written communication skills, with the ability to effectively convey complex technical concepts to non-technical audiences.
+A passion for learning and staying updated with emerging technologies and industry trends.
+Excellent knowledge in integration with upstream and downstream processes and systems

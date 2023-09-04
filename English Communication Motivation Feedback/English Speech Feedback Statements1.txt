@@ -10,6 +10,11 @@ escape from or avoid (a danger, enemy, or pursuer), typically in a skilful or cu
  A type of AI model architecture called Transformers was proposed by a team of researchers from Google in 2017 in a paper called "Attention is All You Need."
  All large language models use components of Transformers as part of their architecture.
 
+====
+Congratulations Rishabh on achieving an important milestone in your journey with Schlumberger - 6 years and counting!
+People are and will always be our greatest asset. Your abilities and contributions are an important key to the success of PuTC & Schlumberger.
+As you reach this milestone in your career and set your sights on future goals, take a moment to reflect upon your past accomplishments and take pride in knowing that you are an important member of our team.
+Look forward to more milestones and continued success
 
 ============== Happy Client - Live Nation : 
 Great demonstration on the importance of planning, setting realistic expectations, teamwork and collaboration when faced with tight deadlines. I would like to extend my gratitude to each team member for their hard work, support, and collaboration. Team members have never hesitated to seek guidance or support one another, fostering the culture of teamwork and continuous learning even in moments when they felt unsure. DM’s strategic thinking and client communication have been instrumental in streamlining our processes, enabling us to deliver effectively and efficiently. Good job team, keep it up.

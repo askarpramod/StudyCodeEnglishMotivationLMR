@@ -1,4 +1,21 @@
  
+ =========== Best 12 AI Tools
+Solve Anything - ChatGPT
+Write Anything - Writesonic
+Generates Art - Midjourney
+Gnerate Code - Replit
+
+Generate Video - Synthesia 
+Generate Music- Soundraw
+Generates TickTok- Fliki
+Generates Avatars - Starrytars 
+PPT - Slides AI
+Edit Pictures - Remini 
+Edit Videos - Pictory
+Summarize notes - Wordtune
+
+=====
+
  Angular 15 CRUD app using material UI | JSON-server | step by step 
  Technical Balaji https://github.com/Tariqu/angular-crud-app
  https://www.youtube.com/watch?v=4mKY_yDq64g

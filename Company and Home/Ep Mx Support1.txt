@@ -1,0 +1,93 @@
+#1.
+
+
+#2 :: AMS Discovery_RTSI_ Overview of Digital Incident Management Process-20230822_113139-Meeting Recording
+
+
+Service Now URL - metrolinx.service-now.com 
+
+Contact Names from the Platform/Customer Experience Group :  Avorojit Ray, 
+
+Btayan Wilson and Jaskaranjit Chahal  
+
+  
+
+System used for Incident management : Service Now for Incident management  
+
+Group - Platfrm customer experience group  
+
+  
+
+3 ways to get incident assigned to group   
+
+Bussines Person => Service Now => Ticket assigned to Customer Experience Group  
+
+Business Person => Helpline call => Helpline will assign to group  
+
+L2 or anyone facing issue in Production they assign ticket to Customer Experience Group 
+
+ 
+
+ITSM take cares of critical incident management :  
+
+ We can inform ITSM in case there is any issue with the production system.  
+
+P1 and P2 are taking care with this call.  
+
+ITSM has list of Applications and contact persons.  
+
+ 
+
+ 
+
+Today Jaskaranjit and Avorojit sometime gets call currently and they either resolves or works with business if it is related to functionals.  
+
+Monitoring tools as well provide  
+
+Business NOCK and IT NOCK to monitor and opens tickets. 
+
+Dhara is from ITSM team, she generally calls to Avorojit and Jasakarn in case of P1 incident. 
+
+Before resolving add closure issue information. We mark it as resolved, it automatically get notified to person who raised it. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Example of incident Ticket of Service Now raised by IT NOCK  
+
+ 
+
+ 
+
+Solution could be :  
+
+Clear storage on the Server  
+
+Notes : 
+
+Manually needs to close ticket. 
+
+If vendor has any incident, then mention vendor incident ticket number in our service now before closing it. 
+
+Ticket is always assigned to group and not to person directly. Clear the resource names from assigned to.  
+
+For any development work , L3 will be raising features and they will create their JIRA task for it. It is manual at the moment. 
+
+ 
+
+Extra screen : 
+
+On Prem Grafana  
+
+ 
+
+ 
